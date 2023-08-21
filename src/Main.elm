@@ -16,7 +16,7 @@ import Util exposing (..)
 
 init : ( Model, Cmd Msg )
 init =
-    ( Setup (SetupModel [] 7), Cmd.none )
+    ( Setup (SetupModel [] 7 False), Cmd.none )
 
 
 main : Program () Model Msg
@@ -50,7 +50,7 @@ update msg model =
     if msg == Start then
         case model of
             Setup m ->
-                ( Play (PlayModel [] (Event "" 0 "") [] 0)
+                ( Play (PlayModel [] (Event "" 0 "") [] 0 m.hardMode)
                 , Random.generate HaveDeck (deckGen (m.size + 2) (getUnits m.units))
                 )
 
@@ -86,7 +86,7 @@ updateEnded msg s t =
             MoreInfo e (Ended s t)
 
         _ ->
-            Setup (SetupModel [] 7)
+            Setup (SetupModel [] 7 False)
 
 
 updateSetup : Msg -> SetupModel -> Model
@@ -113,34 +113,25 @@ updateSetup msg model =
                             (String.toInt s)
                 }
 
-        Start ->
-            testStart
+        LearnMore e ->
+            MoreInfo e (Setup model)
 
+        ChangeHardMode ->
+            Setup { model | hardMode = not model.hardMode}
+                
         _ ->
             Setup model
 
-
-testStart : Model
-testStart =
-    Play
-        (PlayModel
-            [ Event "2" 20 "2"
-            , Event "3" 30 "3"
-            ]
-            (Event "test 1" 10 "test 1 event")
-            [ Event "test 0" 0 "test 0 event" ]
-            0
-        )
 
 
 updatePlay : Msg -> PlayModel -> Model
 updatePlay msg model =
     case msg of
         HaveDeck (first :: second :: rest) ->
-            Play (PlayModel rest first [second] 0)
+            Play (PlayModel rest first [second] 0 model.hardMode)
 
         HaveDeck notLong ->
-            Setup (SetupModel [] 7)
+            Setup (SetupModel [] 7 False)
         
         Guess d1 d2 ->
             case model.deck of
@@ -226,8 +217,16 @@ viewSetup model =
                 , input [ onInput ChangeNum, value (String.fromInt model.size) ] []
                 , button [ onClick (ChangeNum (String.fromInt (model.size + 1))) ] [ text "+" ]
                 ]
+            , div []
+                [ h2 [] [ text "hard mode"]
+                , input [ onClick ChangeHardMode, type_ "checkbox", checked model.hardMode ] []
+                , text  "hard mode"
+                , button [onClick  (LearnMore (Event "About Timeline" 0 "In Hard Mode, you cannot learn about events until they are on the board"))] [ text "?"]
+                ]
             , button [ onClick Start ] [ h3 [] [ text "Start!" ] ]
             ]
+        , div [] [ button [onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline"))]
+                       [ text "More info"]]
         ]
 
 
@@ -251,7 +250,7 @@ viewPlay model =
         , span []
             [ text "event: "
             , span [ style "text-decoration" "underline" ] [ text model.active.name ]
-            , button [ onClick (LearnMore model.active) ] [ text "learn more" ]
+            ,if not model.hardMode then button [ onClick (LearnMore model.active) ] [ text "learn more" ] else span [] []
             ]
         , viewTimeline (List.sortBy .date model.played)
         ]
@@ -301,7 +300,7 @@ viewMoreInfo : Event -> Html Msg
 viewMoreInfo event =
     div []
         [ h1 [] [ text event.name ]
-        , span [] [ text event.desc ]
+        , div [] [ text event.desc ]
         , button [ onClick Back ] [ text "back" ]
         ]
 

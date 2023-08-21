@@ -136,6 +136,12 @@ testStart =
 updatePlay : Msg -> PlayModel -> Model
 updatePlay msg model =
     case msg of
+        HaveDeck (first :: second :: rest) ->
+            Play (PlayModel rest first [second] 0)
+
+        HaveDeck notLong ->
+            Setup (SetupModel [] 7)
+        
         Guess d1 d2 ->
             case model.deck of
                 [] ->
@@ -218,7 +224,7 @@ viewSetup model =
                 [ h2 [] [ text "Select number of cards to study" ]
                 , button [ onClick (ChangeNum (String.fromInt (model.size - 1))) ] [ text "-" ]
                 , input [ onInput ChangeNum, value (String.fromInt model.size) ] []
-                , button [ onClick (ChangeNum (String.fromInt (model.size - 1))) ] [ text "+" ]
+                , button [ onClick (ChangeNum (String.fromInt (model.size + 1))) ] [ text "+" ]
                 ]
             , button [ onClick Start ] [ h3 [] [ text "Start!" ] ]
             ]

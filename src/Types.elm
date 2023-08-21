@@ -12,6 +12,7 @@ type Model
 type alias SetupModel =
     { units : List Unit
     , size : Int
+    , hardMode : Bool
     }
 
 
@@ -20,6 +21,7 @@ type alias PlayModel =
     , active : Event
     , played : List Event
     , score : Int
+    , hardMode : Bool
     }
 
 
@@ -38,6 +40,7 @@ type Msg
     | Start
     | ChangeNum String
     | HaveDeck (List Event)
+    | ChangeHardMode
 
 
 type Unit
