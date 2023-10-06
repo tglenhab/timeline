@@ -44,11 +44,8 @@ type Msg
 
 
 type Unit
-    = VI
-    | VII
-    | VIII
-    | IX
-    | X
+    = I
+    | II
 
 
 
@@ -57,23 +54,11 @@ type Unit
 
 unitList : List Unit
 unitList =
-    [ VI, VII, VIII, IX, X ]
+    [ I, II]
 
 
 unitToStr : Unit -> String
 unitToStr u =
     case u of
-        VI ->
-            "VI"
-
-        VII ->
-            "VII"
-
-        VIII ->
-            "VIII"
-
-        IX ->
-            "IX"
-
-        X ->
-            "X"
+        I -> "I"
+        II -> "II"

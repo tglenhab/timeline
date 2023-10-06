@@ -6900,7 +6900,7 @@ var $author$project$Main$viewWrong = F3(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text(' ')
+							$elm$html$Html$text('-----')
 						])),
 					A2(
 					$elm$html$Html$div,

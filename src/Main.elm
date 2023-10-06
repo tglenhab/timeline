@@ -51,7 +51,7 @@ update msg model =
         case model of
             Setup m ->
                 ( Play (PlayModel [] (Event "" 0 "") [] 0 m.hardMode)
-                , Random.generate HaveDeck (deckGen (m.size + 2) (getUnits m.units))
+                , Random.generate HaveDeck (deckGen (m.size + 1) (getUnits m.units))
                 )
 
             _ ->
@@ -117,22 +117,21 @@ updateSetup msg model =
             MoreInfo e (Setup model)
 
         ChangeHardMode ->
-            Setup { model | hardMode = not model.hardMode}
-                
+            Setup { model | hardMode = not model.hardMode }
+
         _ ->
             Setup model
-
 
 
 updatePlay : Msg -> PlayModel -> Model
 updatePlay msg model =
     case msg of
         HaveDeck (first :: second :: rest) ->
-            Play (PlayModel rest first [second] 0 model.hardMode)
+            Play (PlayModel rest first [ second ] 0 model.hardMode)
 
         HaveDeck notLong ->
             Setup (SetupModel [] 7 False)
-        
+
         Guess d1 d2 ->
             case model.deck of
                 [] ->
@@ -180,21 +179,23 @@ view : Model -> Browser.Document Msg
 view model =
     Browser.Document
         "Timeline"
-        [ case model of
-            Setup m ->
-                viewSetup m
+        [ div [ style "margin" "20px" ]
+            [ case model of
+                Setup m ->
+                    viewSetup m
 
-            Play m ->
-                viewPlay m
+                Play m ->
+                    viewPlay m
 
-            MoreInfo e m ->
-                viewMoreInfo e
+                MoreInfo e m ->
+                    viewMoreInfo e
 
-            Wrong e d1 d2 m ->
-                viewWrong e d1 d2
+                Wrong e d1 d2 m ->
+                    viewWrong e d1 d2
 
-            Ended s l ->
-                viewEnded s l
+                Ended s l ->
+                    viewEnded s l
+            ]
         ]
 
 
@@ -218,15 +219,17 @@ viewSetup model =
                 , button [ onClick (ChangeNum (String.fromInt (model.size + 1))) ] [ text "+" ]
                 ]
             , div []
-                [ h2 [] [ text "hard mode"]
+                [ h2 [] [ text "hard mode" ]
                 , input [ onClick ChangeHardMode, type_ "checkbox", checked model.hardMode ] []
-                , text  "hard mode"
-                , button [onClick  (LearnMore (Event "About Timeline" 0 "In Hard Mode, you cannot learn about events until they are on the board"))] [ text "?"]
+                , text "hard mode"
+                , button [ onClick (LearnMore (Event "About Timeline" 0 "In Hard Mode, you cannot learn about events until they are on the board")) ] [ text "?" ]
                 ]
             , button [ onClick Start ] [ h3 [] [ text "Start!" ] ]
             ]
-        , div [] [ button [onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline"))]
-                       [ text "More info"]]
+        , div []
+            [ button [ onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline")) ]
+                [ text "More info" ]
+            ]
         ]
 
 
@@ -250,7 +253,11 @@ viewPlay model =
         , span []
             [ text "event: "
             , span [ style "text-decoration" "underline" ] [ text model.active.name ]
-            ,if not model.hardMode then button [ onClick (LearnMore model.active) ] [ text "learn more" ] else span [] []
+            , if not model.hardMode then
+                button [ onClick (LearnMore model.active) ] [ text "learn more" ]
+
+              else
+                span [] []
             ]
         , viewTimeline (List.sortBy .date model.played)
         ]
@@ -319,6 +326,7 @@ viewWrong e d1 d2 =
                     ++ String.fromInt e.date
                 )
             ]
+        , div [] [ text "-----" ]
         , div [] [ text e.desc ]
         , button [ onClick Back ] [ text "back" ]
         ]
