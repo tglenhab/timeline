@@ -51,6 +51,27 @@ unitDict =
             , Event "Treaty of Paris" 1783 "The Treaty of Paris ended the American Revolution, acknowledging that these United Colonies are, and of Right ought to be Free and Independent States... or at least, that they were now free and 13 separate entities."
             ]
           )
+        , ( "VI"
+          , [ Event "Mississippi Black Codes" 1865 "Mississippi and other states create laws to ensure continued labor supply and limit white/Black social contact."
+            , Event "Civil Rights Act 1866 " 1866 "Much like the 14th amendment, the Civil Rights Act outlawed Black codes in the states. Vetoed by Johnson, then the veto overturned."
+            , Event "Reconstruction Act" 1867 "Divided the former Confederate states into five military districts until they accepted the 14th amendment."
+            , Event "14th Amendment  ratified" 1868 "Established equal protection under the law by race; birthright citizenship (and more)"
+            , Event "Tenure of Office Act " 1868 "Law passed to require Johnson to get permission from Congress to fire members of his cabinet."
+            , Event "Johnson Impeached" 1868 "After breaking the Tenure of Office Act, Johnson was impeached—but acquitted by one vote."
+            , Event "Founding of the KKK" 1865 "The Ku Klux Klan is founded in response to reconstruction to maintain strict former racial hirearchies of slavery"
+            , Event "15th Amendment ratified" 1870 "The US expands the franchize to Black men"
+            , Event "Enforcement Acts" 1870 "Provide federal government authority for reconstruction"
+            , Event "Colfax Massacre" 1873 "One of the most violent race riots in the South, led by the KKK"
+            , Event "Slaughterhouse Cases" 1873 "This case dramatically limited the scope of the 14th amendment by saying it applied only to Federal laws."
+            , Event "Whiskey Ring" 1875 "An example of the corruption of the Grant Administration"
+            , Event "Molly Maguires Strike" 1875 "One of the most notorious strikes of the Gilded Age. "
+            , Event "Paris Commune" 1871 "An short-lived worker's government in Paris that frightened those in the US."
+            , Event "Cruikshank" 1876 "This case overturned the constitutionality of the Enforcement Acts."
+            , Event "Great Railroad Strike" 1877 "Major strikes that had the effect of pulling troops out of the South."
+            , Event "Bargain of 1877 " 1877 "Compromise after the contested election of 1876 that placed Hayes in the Presidency and sent troops back to their barracks in the south."
+            , Event "Panic of 1873 " 1873 "Major economic depression that led many industrial workers unable to find full-time work."
+            ]
+          )
         ]
 
 

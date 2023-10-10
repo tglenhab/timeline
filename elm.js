@@ -5977,13 +5977,39 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'The Spirit of the Laws', 1748, 'Montesquieu\'s book laid out the idea of checks and balances that would allow self-interest to prevent tyranny'),
 					A3($author$project$Types$Event, 'The Declaration of Independence', 1776, 'When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the Powers of the earth, the separate and equal station to which the Laws of Nature and of Nature\'s God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.'),
 					A3($author$project$Types$Event, 'Treaty of Paris', 1783, 'The Treaty of Paris ended the American Revolution, acknowledging that these United Colonies are, and of Right ought to be Free and Independent States... or at least, that they were now free and 13 separate entities.')
+				])),
+			_Utils_Tuple2(
+			'VI',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Mississippi Black Codes', 1865, 'Mississippi and other states create laws to ensure continued labor supply and limit white/Black social contact.'),
+					A3($author$project$Types$Event, 'Civil Rights Act 1866 ', 1866, 'Much like the 14th amendment, the Civil Rights Act outlawed Black codes in the states. Vetoed by Johnson, then the veto overturned.'),
+					A3($author$project$Types$Event, 'Reconstruction Act', 1867, 'Divided the former Confederate states into five military districts until they accepted the 14th amendment.'),
+					A3($author$project$Types$Event, '14th Amendment  ratified', 1868, 'Established equal protection under the law by race; birthright citizenship (and more)'),
+					A3($author$project$Types$Event, 'Tenure of Office Act ', 1868, 'Law passed to require Johnson to get permission from Congress to fire members of his cabinet.'),
+					A3($author$project$Types$Event, 'Johnson Impeached', 1868, 'After breaking the Tenure of Office Act, Johnson was impeached—but acquitted by one vote.'),
+					A3($author$project$Types$Event, 'Founding of the KKK', 1865, 'The Ku Klux Klan is founded in response to reconstruction to maintain strict former racial hirearchies of slavery'),
+					A3($author$project$Types$Event, '15th Amendment ratified', 1870, 'The US expands the franchize to Black men'),
+					A3($author$project$Types$Event, 'Enforcement Acts', 1870, 'Provide federal government authority for reconstruction'),
+					A3($author$project$Types$Event, 'Colfax Massacre', 1873, 'One of the most violent race riots in the South, led by the KKK'),
+					A3($author$project$Types$Event, 'Slaughterhouse Cases', 1873, 'This case dramatically limited the scope of the 14th amendment by saying it applied only to Federal laws.'),
+					A3($author$project$Types$Event, 'Whiskey Ring', 1875, 'An example of the corruption of the Grant Administration'),
+					A3($author$project$Types$Event, 'Molly Maguires Strike', 1875, 'One of the most notorious strikes of the Gilded Age. '),
+					A3($author$project$Types$Event, 'Paris Commune', 1871, 'An short-lived worker\'s government in Paris that frightened those in the US.'),
+					A3($author$project$Types$Event, 'Cruikshank', 1876, 'This case overturned the constitutionality of the Enforcement Acts.'),
+					A3($author$project$Types$Event, 'Great Railroad Strike', 1877, 'Major strikes that had the effect of pulling troops out of the South.'),
+					A3($author$project$Types$Event, 'Bargain of 1877 ', 1877, 'Compromise after the contested election of 1876 that placed Hayes in the Presidency and sent troops back to their barracks in the south.'),
+					A3($author$project$Types$Event, 'Panic of 1873 ', 1873, 'Major economic depression that led many industrial workers unable to find full-time work.')
 				]))
 		]));
 var $author$project$Types$unitToStr = function (u) {
-	if (u.$ === 'I') {
-		return 'I';
-	} else {
-		return 'II';
+	switch (u.$) {
+		case 'I':
+			return 'I';
+		case 'II':
+			return 'II';
+		default:
+			return 'VI';
 	}
 };
 var $elm$core$Maybe$withDefault = F2(
@@ -6659,8 +6685,9 @@ var $elm$html$Html$Attributes$stringProperty = F2(
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $author$project$Types$I = {$: 'I'};
 var $author$project$Types$II = {$: 'II'};
+var $author$project$Types$VI = {$: 'VI'};
 var $author$project$Types$unitList = _List_fromArray(
-	[$author$project$Types$I, $author$project$Types$II]);
+	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$VI]);
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Types$Select = function (a) {
 	return {$: 'Select', a: a};
@@ -6900,7 +6927,7 @@ var $author$project$Main$viewWrong = F3(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text(' ')
+							$elm$html$Html$text('-----')
 						])),
 					A2(
 					$elm$html$Html$div,

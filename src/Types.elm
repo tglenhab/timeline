@@ -46,6 +46,7 @@ type Msg
 type Unit
     = I
     | II
+    | VI
 
 
 
@@ -54,7 +55,7 @@ type Unit
 
 unitList : List Unit
 unitList =
-    [ I, II]
+    [ I, II, VI]
 
 
 unitToStr : Unit -> String
@@ -62,3 +63,4 @@ unitToStr u =
     case u of
         I -> "I"
         II -> "II"
+        VI -> "VI"
