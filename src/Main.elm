@@ -195,6 +195,13 @@ view model =
 
                 Ended s l ->
                     viewEnded s l
+            , div []
+                [ case model of
+                      MoreInfo _ _ -> span [] []
+                      Wrong _ _ _ _ -> span [] []
+                      _ -> (button [ onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline")) ]
+                                      [ text "More info" ])
+                ]
             ]
         ]
 
@@ -226,10 +233,6 @@ viewSetup model =
                 ]
             , button [ onClick Start ] [ h3 [] [ text "Start!" ] ]
             ]
-        , div []
-            [ button [ onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline")) ]
-                [ text "More info" ]
-            ]
         ]
 
 
@@ -242,7 +245,7 @@ viewUnitSelect mod unit =
             , checked (List.member unit mod)
             ]
             []
-        , text ("Unit " ++ unitToStr unit)
+        , text ("Unit " ++ unitToStr unit ++ unitDates unit)
         ]
 
 
@@ -254,7 +257,7 @@ viewPlay model =
             [ text "event: "
             , span [ style "text-decoration" "underline" ] [ text model.active.name ]
             , if not model.hardMode then
-                button [ onClick (LearnMore model.active) ] [ text "learn more" ]
+                div [] [button [ onClick (LearnMore model.active) ] [ text "learn more" ]]
 
               else
                 span [] []
@@ -284,7 +287,13 @@ viewTimeline listEvents =
         placedDates =
             List.map
                 (\e ->
-                    div []
+                    div [ style "display" "flex"
+                        , style "flex-direction" "column"
+                        , style "justify-content" "space-around"
+                        , style "align-items" "center"
+                        , style "padding" "10px"
+                        , style "margin" "10px"
+                        , style "border-style" "solid"]
                         [ h3 [] [ text e.name ]
                         , div [] [ text (String.fromInt e.date) ]
                         , button [ onClick (LearnMore e) ] [ text "learn more" ]
@@ -294,13 +303,17 @@ viewTimeline listEvents =
     in
     div
         [ style "display" "flex"
-        , style "flex-direction" "row"
+        , style "flex-direction" "column"
         , style "justify-content" "space-around"
+        , style "align-items" "center"
+        --, style "flex-wrap" "wrap"
         ]
-        (listInterleave
-            selectionButtons
-            placedDates
-        )
+        
+    (listInterleave
+         selectionButtons
+         placedDates
+    )
+    
 
 
 viewMoreInfo : Event -> Html Msg

@@ -6504,7 +6504,16 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 		function (e) {
 			return A2(
 				$elm$html$Html$div,
-				_List_Nil,
+				_List_fromArray(
+					[
+						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+						A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'space-around'),
+						A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+						A2($elm$html$Html$Attributes$style, 'padding', '10px'),
+						A2($elm$html$Html$Attributes$style, 'margin', '10px'),
+						A2($elm$html$Html$Attributes$style, 'border-style', 'solid')
+					]),
 				_List_fromArray(
 					[
 						A2(
@@ -6571,8 +6580,9 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 		_List_fromArray(
 			[
 				A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-				A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
-				A2($elm$html$Html$Attributes$style, 'justify-content', 'space-around')
+				A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+				A2($elm$html$Html$Attributes$style, 'justify-content', 'space-around'),
+				A2($elm$html$Html$Attributes$style, 'align-items', 'center')
 			]),
 		A2($author$project$Util$listInterleave, selectionButtons, placedDates));
 };
@@ -6606,15 +6616,21 @@ var $author$project$Main$viewPlay = function (model) {
 								$elm$html$Html$text(model.active.name)
 							])),
 						(!model.hardMode) ? A2(
-						$elm$html$Html$button,
+						$elm$html$Html$div,
+						_List_Nil,
 						_List_fromArray(
 							[
-								$elm$html$Html$Events$onClick(
-								$author$project$Types$LearnMore(model.active))
-							]),
-						_List_fromArray(
-							[
-								$elm$html$Html$text('learn more')
+								A2(
+								$elm$html$Html$button,
+								_List_fromArray(
+									[
+										$elm$html$Html$Events$onClick(
+										$author$project$Types$LearnMore(model.active))
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('learn more')
+									]))
 							])) : A2($elm$html$Html$span, _List_Nil, _List_Nil)
 					])),
 				$author$project$Main$viewTimeline(
@@ -6974,21 +6990,24 @@ var $author$project$Main$view = function (model) {
 						_List_fromArray(
 							[
 								function () {
-								if (model.$ === 'MoreInfo') {
-									return A2($elm$html$Html$span, _List_Nil, _List_Nil);
-								} else {
-									return A2(
-										$elm$html$Html$button,
-										_List_fromArray(
-											[
-												$elm$html$Html$Events$onClick(
-												$author$project$Types$LearnMore(
-													A3($author$project$Types$Event, 'About Timeline', 0, 'Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline')))
-											]),
-										_List_fromArray(
-											[
-												$elm$html$Html$text('More info')
-											]));
+								switch (model.$) {
+									case 'MoreInfo':
+										return A2($elm$html$Html$span, _List_Nil, _List_Nil);
+									case 'Wrong':
+										return A2($elm$html$Html$span, _List_Nil, _List_Nil);
+									default:
+										return A2(
+											$elm$html$Html$button,
+											_List_fromArray(
+												[
+													$elm$html$Html$Events$onClick(
+													$author$project$Types$LearnMore(
+														A3($author$project$Types$Event, 'About Timeline', 0, 'Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline')))
+												]),
+											_List_fromArray(
+												[
+													$elm$html$Html$text('More info')
+												]));
 								}
 							}()
 							]))

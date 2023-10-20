@@ -71,5 +71,5 @@ unitDates u =
     "(" ++ (case u of
                 I  -> "Colonial"
                 II -> "1650-1780s"
-                VI -> "Reconstruction"
+                VI -> "1865-1873"
                 
