@@ -6000,6 +6000,57 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'Great Railroad Strike', 1877, 'Major strikes that had the effect of pulling troops out of the South.'),
 					A3($author$project$Types$Event, 'Bargain of 1877 ', 1877, 'Compromise after the contested election of 1876 that placed Hayes in the Presidency and sent troops back to their barracks in the south.'),
 					A3($author$project$Types$Event, 'Panic of 1873 ', 1873, 'Major economic depression that led many industrial workers unable to find full-time work.')
+				])),
+			_Utils_Tuple2(
+			'III',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'First former colony outlaws slavery', 1777, 'The Republic of Vermont outlaws slavery in its Constitution.'),
+					A3($author$project$Types$Event, 'Article of Confederation ratified', 1783, 'The Articles created a \"firm league of friendship\" whose \"union\" would be \"perpetual.\"'),
+					A3($author$project$Types$Event, 'Treaty of Paris', 1783, 'The Revolutionary War ends with a treaty between the King of England and 13 separate colonies.'),
+					A3($author$project$Types$Event, 'Quock Walker Case', 1783, 'The Massachusetts Supreme Judifical Court decrees slavery inconsistent with the Commonwealth\'s constitution.'),
+					A3($author$project$Types$Event, 'Shays\' Rebellion', 1786, 'Tax revolt in Western Massachusetts that helps the push for a stronger central government.'),
+					A3($author$project$Types$Event, 'Northwest Ordinance', 1787, 'Policy passed under the Articles that the land north of the Ohio and east of the Mississippi could become states, with slavery banned, and the rights to Native Americans respected (in theory).'),
+					A3($author$project$Types$Event, 'Constitutional Convention', 1787, 'Held in Philadelphia, the Constitutional Convention propsed a, well, Constitution.'),
+					A3($author$project$Types$Event, 'Constitutional ratified', 1788, 'Helped by the Federalist Papers, New York and Virginia finally ratitied the Constitution, putting it into effect.'),
+					A3($author$project$Types$Event, 'The French Revolution', 1789, 'At first, Americans of all parties were thrilled by the French Revolution.'),
+					A3($author$project$Types$Event, 'Dinner Table Bargin', 1790, 'Alexander Hamilton agrees the capital should move to DC in exchange for Jefferson and Madison\'s support of his debt assumption plan.'),
+					A3($author$project$Types$Event, 'Bill of Rights Ratified', 1791, 'Bill of Rights Ratified'),
+					A3($author$project$Types$Event, 'Haitian Revolution begins', 1791, 'Hamilton helps write the Constitution... but many slaveholders are terrified.'),
+					A3($author$project$Types$Event, 'Jay\'s Treaty', 1794, 'Washington supports a treaty allying the US more closely with monarchical UK than with Republican France.'),
+					A3($author$project$Types$Event, 'Ugly Election of 1796', 1796, 'Ugly fights between Federalist John Adams and Republican Thomas Jefferson. (Adams wins.)'),
+					A3($author$project$Types$Event, 'XYZ Affair', 1798, 'I don\'t care if you know about the XYZ Affair!'),
+					A3($author$project$Types$Event, 'Alien and Sedition Acts', 1798, 'The Alien act gave Congress new powers to expel (French) aliens; the Sedition Act violated the 1st amendment by making it a crime to criticize the government.'),
+					A3($author$project$Types$Event, 'Kentucky Resolution', 1798, 'Written in response to the Sedition Act, Jefferson anonymously laid out the argument that states could \"nullify\" unconstitutional laws.'),
+					A3($author$project$Types$Event, 'Fries Rebellion', 1799, 'Another Tax Revolt!'),
+					A3($author$project$Types$Event, 'Revolution of 1800', 1800, 'After another ugly election, the Federalists allow the winning Republicans to take office!'),
+					A3($author$project$Types$Event, 'Whiskey Rebellion', 1794, 'Washington leads the troops against rebelling farmers.'),
+					A3($author$project$Types$Event, 'Cotton Gin Patented', 1794, 'Eli Whitney patents the machine that makes the growing of cotton highly profitable.')
+				])),
+			_Utils_Tuple2(
+			'VII',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Haymarket', 1886, 'A labor protest that involved a bomb (with police violence in return) that frightened many that labor was growing threatening.'),
+					A3($author$project$Types$Event, 'Pullman Strike', 1894, 'The strike that prompted Eugene V. Debs to propose a \"sympathy\" strike; Gompers refused; Debs was arrested.'),
+					A3($author$project$Types$Event, 'Homestead Strike', 1892, 'A strike at Carnegie\'s plant where his righthand man, Henry Frick, called out the Pinkertons'),
+					A3($author$project$Types$Event, 'Knights of Labor Founded', 1869, 'An Industrial Union; the Knights of Labor largely collapsed as they did not respond quickly enough to Haymarker.'),
+					A3($author$project$Types$Event, 'AFL founded', 1886, 'Run by Samuel Gompers more or less until 1924, this trades union often stood as the \"safer\" union movement.'),
+					A3($author$project$Types$Event, 'Munn v. IL', 1876, 'One of the \"Granger\" case The Supreme Court found private property could be regulated if it was in the public interest.'),
+					A3($author$project$Types$Event, 'Wabash v. Ohio', 1886, 'Wabash refined Munn v. IL, saying only the Federal Government could regulate railroads (under the interstate commerce clause).'),
+					A3($author$project$Types$Event, 'Interstate Commerce Act', 1887, 'Using the power granted in Wabash, Congress passed a law making the Interstate Commerce Commission, which could (but didn\'t much) regulate railroads. Is it still the Gilded Age?'),
+					A3($author$project$Types$Event, 'Sherman Anti-Trust Act', 1890, 'Anti-monopoly law that Sherman himself said was to avoid concentrated wealthy and power, which would be \"a kingly perogative... inconsistant with our form of government.\"'),
+					A3($author$project$Types$Event, 'Populist Platform', 1892, 'The Populists demanded by more government regulation of monopolies and \"good government\" reforms to lessen the power of monopolies and other elites.'),
+					A3($author$project$Types$Event, 'Cross of Gold Speech', 1896, 'William Jenning Bryan\'s pro-farmer (and slightly pro-silver) speech made him the darling of the Populists, who named the Democrat as their candidate; they were essentially absorbed back into the Democratic party after.'),
+					A3($author$project$Types$Event, 'Minor v . Happersett', 1876, 'Virginia Minor was found to be a citizen... but not to have the right to vote.'),
+					A3($author$project$Types$Event, '\"The Yellow Wallpaper\"', 1892, 'Charlotte Perkins Gilman\'s famous story....'),
+					A3($author$project$Types$Event, 'Hull House founded', 1889, 'One of many Settlement Houses that allowed middle-class women (and some men) a way to serve the poor by living in poor neighborhoods.'),
+					A3($author$project$Types$Event, 'The Gospel of Wealth', 1889, 'Andrew Carnegie\'s famous essay.'),
+					A3($author$project$Types$Event, 'Chicago World\'s Fair/Columbian Exposition', 1893, 'The \"White City\" celebrates progress.'),
+					A3($author$project$Types$Event, 'Atlanta Compromise Speech', 1895, 'Booker T. Washington urges his Black and white audience to \"cast down your bucket where you are.\"'),
+					A3($author$project$Types$Event, 'United States v. Wong Kim Ark', 1898, 'Supreme Court case that the birthright citizenship promised by the 14th amendment applies to the children of Chinese immigrants born in the US.'),
+					A3($author$project$Types$Event, 'Plessy v. Ferguson', 1896, 'Infamous case establishing that \"separate but equal\" accommodations were consistent with the 14th amendment.'),
+					A3($author$project$Types$Event, 'Williams v. Mississippi', 1898, 'Case established that rules to present African-Americans from voting were Constitutional if they were not explicitly about race.')
 				]))
 		]));
 var $author$project$Types$unitToStr = function (u) {
@@ -6008,8 +6059,12 @@ var $author$project$Types$unitToStr = function (u) {
 			return 'I';
 		case 'II':
 			return 'II';
-		default:
+		case 'III':
+			return 'III';
+		case 'VI':
 			return 'VI';
+		default:
+			return 'VII';
 	}
 };
 var $elm$core$Maybe$withDefault = F2(
@@ -6701,12 +6756,30 @@ var $elm$html$Html$Attributes$stringProperty = F2(
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $author$project$Types$I = {$: 'I'};
 var $author$project$Types$II = {$: 'II'};
+var $author$project$Types$III = {$: 'III'};
 var $author$project$Types$VI = {$: 'VI'};
+var $author$project$Types$VII = {$: 'VII'};
 var $author$project$Types$unitList = _List_fromArray(
-	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$VI]);
+	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$VI, $author$project$Types$VII]);
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Types$Select = function (a) {
 	return {$: 'Select', a: a};
+};
+var $author$project$Types$unitPeriod = function (u) {
+	return ' (' + (function () {
+		switch (u.$) {
+			case 'I':
+				return '17th Century';
+			case 'II':
+				return 'Period of Salutary Neglect';
+			case 'III':
+				return 'Federalist Period';
+			case 'VI':
+				return 'Reconstruction';
+			default:
+				return 'Gilded Age';
+		}
+	}() + ') ');
 };
 var $author$project$Main$viewUnitSelect = F2(
 	function (mod, unit) {
@@ -6727,7 +6800,7 @@ var $author$project$Main$viewUnitSelect = F2(
 						]),
 					_List_Nil),
 					$elm$html$Html$text(
-					'Unit ' + $author$project$Types$unitToStr(unit))
+					'Unit ' + ($author$project$Types$unitToStr(unit) + $author$project$Types$unitPeriod(unit)))
 				]));
 	});
 var $author$project$Main$viewSetup = function (model) {

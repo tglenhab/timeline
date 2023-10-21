@@ -46,7 +46,9 @@ type Msg
 type Unit
     = I
     | II
+    | III
     | VI
+    | VII
 
 
 
@@ -55,7 +57,7 @@ type Unit
 
 unitList : List Unit
 unitList =
-    [ I, II, VI]
+    [ I, II, III, VI, VII]
 
 
 unitToStr : Unit -> String
@@ -63,13 +65,19 @@ unitToStr u =
     case u of
         I -> "I"
         II -> "II"
+        III -> "III"
         VI -> "VI"
+        VII -> "VII"
 
 -- gives a (string) of the start and end dates of the unit
-unitDates : Unit -> String
-unitDates u =
-    "(" ++ (case u of
-                I  -> "Colonial"
-                II -> "1650-1780s"
+unitPeriod : Unit -> String
+unitPeriod u =
+    " (" ++ (case u of
+                I  -> "17th Century"
+                II -> "Period of Salutary Neglect"
+                III -> "Federalist Period"
                 VI -> "Reconstruction"
+                VII -> "Gilded Age"
+           )
+        ++ ") "
                 

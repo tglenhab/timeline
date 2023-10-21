@@ -245,7 +245,7 @@ viewUnitSelect mod unit =
             , checked (List.member unit mod)
             ]
             []
-        , text ("Unit " ++ unitToStr unit ++ unitDates unit)
+        , text ("Unit " ++ unitToStr unit ++ unitPeriod unit)
         ]
 
 
