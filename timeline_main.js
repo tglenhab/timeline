@@ -6157,6 +6157,36 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'United States v. Wong Kim Ark', 1898, 'Supreme Court case that the birthright citizenship promised by the 14th amendment applies to the children of Chinese immigrants born in the US.'),
 					A3($author$project$Types$Event, 'Plessy v. Ferguson', 1896, 'Infamous case establishing that \"separate but equal\" accommodations were consistent with the 14th amendment.'),
 					A3($author$project$Types$Event, 'Williams v. Mississippi', 1898, 'Case established that rules to present African-Americans from voting were Constitutional if they were not explicitly about race.')
+				])),
+			_Utils_Tuple2(
+			'X',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Neutrality Act of 1936', 1936, 'Isolationism! Remember the Nye Commission that investigated whether Wall Street had really benefited from WWI...'),
+					A3($author$project$Types$Event, 'American Liberty League founded', 1934, 'Anti-New Deal group.'),
+					A3($author$project$Types$Event, 'Scopes Monkey Trial', 1925, 'ACLU test case where Bert Scopes broke Tennessee\'s law against teaching evolution. Show trial with Clarence Darrow and William Jennings Bryan.'),
+					A3($author$project$Types$Event, '\"The Klan\'s Defense of Americanism\"', 1926, 'Hiram Walker Evan\'s defense of the plain folks, drivers of second hand Fords against the \"mongrelized\" Liberal.'),
+					A3($author$project$Types$Event, 'First Catholic candidate for President', 1928, 'Al Smith!'),
+					A3($author$project$Types$Event, 'Stock Market Crash', 1929, 'The crash of the stock market.'),
+					A3($author$project$Types$Event, 'Depression Begins', 1931, 'After a credit freeze, and bank runs (in the US and elsewhere) the country decends into depression'),
+					A3($author$project$Types$Event, 'Glass-Steagall Act', 1933, 'First New Deal banking reforms! Creates the FDIC!'),
+					A3($author$project$Types$Event, 'Public Works Administration', 1933, 'First New Deal jobs program! '),
+					A3($author$project$Types$Event, 'Agricultural Adjustment Administration', 1933, 'First New Deal program to raise farm prices!'),
+					A3($author$project$Types$Event, 'Dust Bowl Begins', 1934, 'Ecological distaster sending thousands of \"Okies\" to California (where they are blocked from entry)'),
+					A3($author$project$Types$Event, 'National Recovery Act', 1933, 'First New Deal program for businesses to voluntarily keep up wages, protect unions... and earn a Blue Eagle!'),
+					A3($author$project$Types$Event, 'Tennessee Valley Authority', 1933, 'First New Deal program to electrify Appalachia'),
+					A3($author$project$Types$Event, 'End of Prohibition', 1933, '21st Amendment!'),
+					A3($author$project$Types$Event, 'Election of Hitler', 1932, 'Hitler elected'),
+					A3($author$project$Types$Event, 'Berlin Olympics', 1936, 'Olympics held in Berlin where Hitler snubbed Black athlete Jesse Owens.'),
+					A3($author$project$Types$Event, 'Social Security Act', 1935, 'Second New Deal program to support people over 65 (note: life expectacy was 58 for men!)'),
+					A3($author$project$Types$Event, 'Wagner Act', 1935, 'Second New Deal pro-labor movement law, Labor\'s Magna Carta; creates the National Labor Relations Board'),
+					A3($author$project$Types$Event, 'Schecter Case', 1935, 'Ooops: the National Recovery was unconstitutional... maybe the rest of the New Deal was, too...'),
+					A3($author$project$Types$Event, 'Court Packing', 1937, 'FDR proposes adding justices to the Court; generally seen as a tyrannical act. (It doesn\'t happen.)'),
+					A3($author$project$Types$Event, 'Conservative Manifesto', 1937, 'Southern Democrat Josiah Bailey comes out against the New Deal'),
+					A3($author$project$Types$Event, 'Works Progress Administration', 1935, 'HUGE Second New Deal Works program, including Federal One, the arts program.'),
+					A3($author$project$Types$Event, 'West Coast Hotel v. Parrish', 1937, 'After (but unrelated to) the court packing proposal, the Supreme Court decides the New Deal is okay'),
+					A3($author$project$Types$Event, 'WWII begins', 1939, 'Germany invades Poland. The US stays neutral'),
+					A3($author$project$Types$Event, 'Four Freedoms Speech', 1941, 'FDR speaks not only of the Freedom OF speech, but freedom FROM fear and want.')
 				]))
 		]));
 var $author$project$Types$unitToStr = function (u) {
@@ -6177,8 +6207,10 @@ var $author$project$Types$unitToStr = function (u) {
 			return 'VII';
 		case 'VIII':
 			return 'VIII';
-		default:
+		case 'IX':
 			return 'IX';
+		default:
+			return 'X';
 	}
 };
 var $elm$core$Maybe$withDefault = F2(
@@ -6877,8 +6909,9 @@ var $author$project$Types$V = {$: 'V'};
 var $author$project$Types$VI = {$: 'VI'};
 var $author$project$Types$VII = {$: 'VII'};
 var $author$project$Types$VIII = {$: 'VIII'};
+var $author$project$Types$X = {$: 'X'};
 var $author$project$Types$unitList = _List_fromArray(
-	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$IV, $author$project$Types$V, $author$project$Types$VI, $author$project$Types$VII, $author$project$Types$VIII, $author$project$Types$IX]);
+	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$IV, $author$project$Types$V, $author$project$Types$VI, $author$project$Types$VII, $author$project$Types$VIII, $author$project$Types$IX, $author$project$Types$X]);
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Types$Select = function (a) {
 	return {$: 'Select', a: a};
@@ -6902,8 +6935,10 @@ var $author$project$Types$unitPeriod = function (u) {
 				return 'Gilded Age';
 			case 'VIII':
 				return 'Age of Empire';
-			default:
+			case 'IX':
 				return 'Progressive Era';
+			default:
+				return 'New Deal';
 		}
 	}() + ') ');
 };

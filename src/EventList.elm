@@ -217,5 +217,33 @@ unitDict =
             , Event "Williams v. Mississippi" 1898 "Case established that rules to present African-Americans from voting were Constitutional if they were not explicitly about race."
             ]
           )
+        , ( "X"
+          , [Event "Neutrality Act of 1936" 1936 "Isolationism! Remember the Nye Commission that investigated whether Wall Street had really benefited from WWI..."
+            , Event "American Liberty League founded" 1934 "Anti-New Deal group."
+            , Event "Scopes Monkey Trial" 1925 "ACLU test case where Bert Scopes broke Tennessee's law against teaching evolution. Show trial with Clarence Darrow and William Jennings Bryan."
+            , Event "\"The Klan's Defense of Americanism\"" 1926 "Hiram Walker Evan's defense of the plain folks, drivers of second hand Fords against the \"mongrelized\" Liberal."
+            , Event "First Catholic candidate for President" 1928 "Al Smith!"
+            , Event "Stock Market Crash" 1929 "The crash of the stock market."
+            , Event "Depression Begins" 1931 "After a credit freeze, and bank runs (in the US and elsewhere) the country decends into depression"
+            , Event "Glass-Steagall Act" 1933 "First New Deal banking reforms! Creates the FDIC!"
+            , Event "Public Works Administration" 1933 "First New Deal jobs program! "
+            , Event "Agricultural Adjustment Administration" 1933 "First New Deal program to raise farm prices!"
+            , Event "Dust Bowl Begins" 1934 "Ecological distaster sending thousands of \"Okies\" to California (where they are blocked from entry)"
+            , Event "National Recovery Act" 1933 "First New Deal program for businesses to voluntarily keep up wages, protect unions... and earn a Blue Eagle!"
+            , Event "Tennessee Valley Authority" 1933 "First New Deal program to electrify Appalachia"
+            , Event "End of Prohibition" 1933 "21st Amendment!"
+            , Event "Election of Hitler" 1932 "Hitler elected"
+            , Event "Berlin Olympics" 1936 "Olympics held in Berlin where Hitler snubbed Black athlete Jesse Owens."
+            , Event "Social Security Act" 1935 "Second New Deal program to support people over 65 (note: life expectacy was 58 for men!)"
+            , Event "Wagner Act" 1935 "Second New Deal pro-labor movement law, Labor's Magna Carta; creates the National Labor Relations Board"
+            , Event "Schecter Case" 1935 "Ooops: the National Recovery was unconstitutional... maybe the rest of the New Deal was, too..."
+            , Event "Court Packing" 1937 "FDR proposes adding justices to the Court; generally seen as a tyrannical act. (It doesn't happen.)"
+            , Event "Conservative Manifesto" 1937 "Southern Democrat Josiah Bailey comes out against the New Deal"
+            , Event "Works Progress Administration" 1935 "HUGE Second New Deal Works program, including Federal One, the arts program."
+            , Event "West Coast Hotel v. Parrish" 1937 "After (but unrelated to) the court packing proposal, the Supreme Court decides the New Deal is okay"
+            , Event "WWII begins" 1939 "Germany invades Poland. The US stays neutral"
+            , Event "Four Freedoms Speech" 1941 "FDR speaks not only of the Freedom OF speech, but freedom FROM fear and want."
+            ]
+          )
         ]
         
