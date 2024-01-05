@@ -6002,6 +6002,44 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'Panic of 1873 ', 1873, 'Major economic depression that led many industrial workers unable to find full-time work.')
 				])),
 			_Utils_Tuple2(
+			'VIII',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Hawaii becomes a territory', 1898, 'Hawaii becomes a territory.'),
+					A3($author$project$Types$Event, 'Pledge of Allegiance written', 1892, 'Pledge of Allegiance written by Francis Bellamy.'),
+					A3($author$project$Types$Event, 'Spanish-American War', 1898, 'Remember the Maine!'),
+					A3($author$project$Types$Event, 'Roosevelt Corollary', 1905, 'It is not true that the United States feels any land hunger or entertains any projects as regards the other nations of the Western Hemisphere save such as are for their welfare. All that this country desires is to see the neighboring countries stable, orderly, and prosperous. Any country whose people conduct themselves well can count upon our hearty friendship. If a nation shows that it knows how to act with reasonable efficiency and decency in social and political matters, if it keeps order and pays its obligations, it need fear no interference from the United States. Chronic wrongdoing, or an impotence which results in a general loosening of the ties of civilized society, may in America, as elsewhere, ultimately require intervention by some civilized nation, and in the Western Hemisphere the adherence of the United States to the Monroe Doctrine may force the United States, however reluctantly, in flagrant cases of such wrongdoing or impotence, to the exercise of an international police power.'),
+					A3($author$project$Types$Event, 'The Significance of the Frontier on American Life', 1890, 'Frederick Jackson Turner\'s speech on how the frontier has brought continous democratic vitality to the United States (but that era has ended).'),
+					A3($author$project$Types$Event, 'Atlanta Compromise Speech', 1895, 'Urging African-Americans to \"cast down their buckets where they are\" Booker T. Washington  pushed for economic equality while accepting that in social issues the races could be as separate as the fingers of the hand.'),
+					A3($author$project$Types$Event, 'Niagara Movement', 1905, 'Precursor of the founding of the NAACP, the Niagara Movement argued that social equality must happen at the same time as economic equality')
+				])),
+			_Utils_Tuple2(
+			'IX',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Principals of Scientific Management', 1911, 'Frederick Winslow Taylor\'s \"Taylorist\" manifesto on how to bring efficiency to industrial (and government) systems.'),
+					A3($author$project$Types$Event, 'Buck v Bell', 1925, 'Court case that affirmed involutary sterilization (somewhat overturned by SKINNER v. OKLAHOMA in the 1940s).'),
+					A3($author$project$Types$Event, 'Pure Food and Drug Act', 1906, 'Congress took action on misleading advertisements and questionable ingredients in comestibles. Not CAUSED by THE JUNGLE though often people say it was.'),
+					A3($author$project$Types$Event, 'Hepburn Act', 1908, 'Let\'s finally use Congress\' power to regulate the railroads!'),
+					A3($author$project$Types$Event, 'Clayton Act', 1914, 'Let\'s protect unions while doing some trust-busting!'),
+					A3($author$project$Types$Event, 'Owens Keating Act', 1916, 'Overturned by the Supreme Court in 1918, this law limited child labor.'),
+					A3($author$project$Types$Event, '16th Amendment', 1913, 'An income tax!'),
+					A3($author$project$Types$Event, '17th Amendment', 1913, 'Direct election of senators!'),
+					A3($author$project$Types$Event, '18th Amendment', 1918, 'Allows Congress to regulate the sale of alcohol (they did so in the Volstead Act)'),
+					A3($author$project$Types$Event, '19th Amendment', 1920, ' 144 years (gross!) after the Declaration of Independence, women can vote! (30 countries did it first, after New Zealand set the trend in 1893. Maybe WYOMING  was the first vote-granting gov\'t to do it, in 1889?)'),
+					A3($author$project$Types$Event, 'Sinking of Luisitania', 1915, 'This British ship, carrying Americans (and arms) was a rallying cry for the US to enter the wa'),
+					A3($author$project$Types$Event, 'WWI breaks out', 1914, 'Out breaks World War I'),
+					A3($author$project$Types$Event, 'Zimmerman Telegram', 1917, 'US discovers Germany allying with Mexico'),
+					A3($author$project$Types$Event, 'US joins WWI', 1917, 'Wilson asks Congress for a declaration of war to make the world safe for Democracy...'),
+					A3($author$project$Types$Event, 'WWI ends', 1918, 'Treaty of Versailles signed in 1919... but not by US'),
+					A3($author$project$Types$Event, 'Espinoage Act', 1917, 'The Espinoage Act gave gov\'t power to control what was sent through the mail/ '),
+					A3($author$project$Types$Event, 'Sedition Act', 1918, 'The Sedition Act (the second after the one in 1898) allowed for the proscecution of those who advocated action against the US'),
+					A3($author$project$Types$Event, 'Treaty of Versailles', 1919, 'Created the League of Nations and put massive reparations on Germany'),
+					A3($author$project$Types$Event, 'Johnson-Reed Act', 1924, 'Closes most immigration to the United States'),
+					A3($author$project$Types$Event, 'Birth of a Nation', 1915, 'DW Griffith\'s epic depiction of the KKK restoring Southern (and Southern white women\'s) perceived honor---reinvigorates '),
+					A3($author$project$Types$Event, 'Founding of the NAACP', 1909, 'NAACP founded by mixed-race group')
+				])),
+			_Utils_Tuple2(
 			'III',
 			_List_fromArray(
 				[
@@ -6026,6 +6064,74 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'Revolution of 1800', 1800, 'After another ugly election, the Federalists allow the winning Republicans to take office!'),
 					A3($author$project$Types$Event, 'Whiskey Rebellion', 1794, 'Washington leads the troops against rebelling farmers.'),
 					A3($author$project$Types$Event, 'Cotton Gin Patented', 1794, 'Eli Whitney patents the machine that makes the growing of cotton highly profitable.')
+				])),
+			_Utils_Tuple2(
+			'IV',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Revolution of 1800', 1800, 'First peaceful transfer of power from one part to another as Federalists accept Democratic-Republican win.'),
+					A3($author$project$Types$Event, 'Louisiana Purchase', 1803, 'US doubles in size. Federalists angry that the US is paying money (which it doesn\'t have) for land (which it does)'),
+					A3($author$project$Types$Event, 'Marybury v. Madison', 1803, 'Supreme Court announces it has the power of judicial review.'),
+					A3($author$project$Types$Event, 'The Duel', 1804, 'Burr kills Hamilton—but use this to remember that there was a Federalist plot to secede.'),
+					A3($author$project$Types$Event, 'Embargo Act', 1807, 'To avoid getting entangled in European wars, Congress limits trade with Europe, infuriating New England Federalists.'),
+					A3($author$project$Types$Event, 'Battle of Tippecanoe', 1811, 'Worried about Tecumseh\'s pan-Indian alliance (which they think is supported by the British), the US army attacks his Prophetstown. '),
+					A3($author$project$Types$Event, 'First Limited Liability Corporation', 1811, ' New York introduces a powerful tool for capitalism: limiting liability so that shareholders were not responsibile for company losses....'),
+					A3($author$project$Types$Event, 'First steamship on the Mississippi', 1811, 'The first steamship.... was on the Mississippi'),
+					A3($author$project$Types$Event, 'War of 1812 starts', 1812, 'The war continues until 1815'),
+					A3($author$project$Types$Event, 'Hartford Convention', 1815, 'New England states want to limit Congresses power so they cannot be outvoted. Maybe threaten secession...?'),
+					A3($author$project$Types$Event, 'Treaty of Ghent', 1815, 'Ends the 1812 War'),
+					A3($author$project$Types$Event, 'American System', 1816, 'Congress proposes: A tariff, Bank, Canals and roads (Madison vetoes the last part)'),
+					A3($author$project$Types$Event, 'Panic of 1819', 1819, 'AAAAAAAHHHHHHHHH'),
+					A3($author$project$Types$Event, ' McCullouch v. Maryland', 1819, 'John Marshall makes the elastic clause very stretchy (\"be the ends legitimate... be it within the scope of the constitution\")'),
+					A3($author$project$Types$Event, 'Missouri Compromise', 1820, 'Missouri (slave) and Maine (free) enter as states, with the rest of the Louisiana Purchase Land divided at a line at the bottom of Missouri between slave and free.'),
+					A3($author$project$Types$Event, 'Erie Canal finished', 1825, 'They finished a canal from Albany to Buffalo!'),
+					A3($author$project$Types$Event, 'First Railroad in the US', 1828, 'Go South Carolina!'),
+					A3($author$project$Types$Event, 'Tariff of Abominations', 1828, 'Otherwise known as the Tariff of 1828, this tariff was opposed by John C. Calhoun as detrimental to the South'),
+					A3($author$project$Types$Event, 'Indian Removal Act', 1830, 'Congress allows for \"voluntary\" moving of Native American Tribes past the Mississippi'),
+					A3($author$project$Types$Event, 'Book of Mormon published', 1830, 'Joseph Smith publishes the translation of the Golden Tablets given to him by the angel Moroni.'),
+					A3($author$project$Types$Event, 'Hayne-Webster Debate', 1830, 'Daniel Webster holds forth for hours (days?) on why South Carolina is wrong to oppose taxes paying for improvements in other tates'),
+					A3($author$project$Types$Event, 'Nat Turner Rebellion', 1831, 'After receiving a vision that he should rise up against those oppressing him and other slaves, Nat Turner leads a rebellion that kills scores of white people in Virginia.'),
+					A3($author$project$Types$Event, 'Nullification Crisis', 1832, 'South Carolina decides to nullify the Tariff of Abominations'),
+					A3($author$project$Types$Event, 'Panic of 1837', 1837, 'AAAHHHHH. I think, in a way, it causes the Civil War because it made it harder for states to fund infrastructure, leading to a breakdown in Van Buren\'s anti-sectional second party system...'),
+					A3($author$project$Types$Event, 'Trail of Tears', 1838, 'Like many other tribes, the Cherokee are involuntarily forced off their land by the US Government'),
+					A3($author$project$Types$Event, 'Log Cabin Campaign', 1840, 'William Henry Harrison runs as a common man (born in a log cabin he built with his own hands... joke!)')
+				])),
+			_Utils_Tuple2(
+			'V',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Rivers and Harbors Act', 1846, 'A federal infrastructure bill vetoed by Polk that angered western Democrats, sending many to the Free Soil Party.'),
+					A3($author$project$Types$Event, 'Founding of the Free Soil Party', 1848, 'An all-Northern political party made of Northern Democrats who favored westward expansion and \"internal improvements\" and anti-slavery \"conscience Whigs.\" Ironically, Van Buren was their candidate. (\"The Van Buren of Today,\" Charles Sumner called it.)'),
+					A3($author$project$Types$Event, 'Gold Rush', 1849, 'Ooops, now California needs a territorian government. Will it have slavery?'),
+					A3($author$project$Types$Event, 'Compromise of 1850', 1850, '1) Free State (California) 8) [the \'ated] Fugitive Slave Act , Popular 5)overeignty in the Mexican Cession, 0 slave trade in DC'),
+					A3($author$project$Types$Event, 'Uncle Tom\'s Cabin published', 1851, 'Written in response to the Fugitive Slave Act, this block-buster novel made it harder for Northerners to ignore the miseries of slavery.'),
+					A3($author$project$Types$Event, 'Kansas-Nebraska Act', 1854, 'Stephen Douglas (IL-D) proposed that the question of slavery in Kansas and Nebraska should be decided by popular sovereignty (thus changing the Missouri Compromise).'),
+					A3($author$project$Types$Event, 'Ostend Manifesto', 1856, 'Secret US document to European powers asserting the right to take Cuba.'),
+					A3($author$project$Types$Event, 'Filibusting of William Walker', 1856, 'William Walker set up himself as President of Nicaragua. His \"filibusting\" came to be seen as pro-slavery.'),
+					A3($author$project$Types$Event, 'Dred Scott Case', 1857, 'Roger Taney\'s court determined people of African descent were not citizens of the US and \"had no rights a white man was bound to respect\'\'—and that Congress had no right  to make laws about slavery in the territories.'),
+					A3($author$project$Types$Event, 'Raid on Harper\'s Ferry', 1859, 'Following his massacre of 5 pro-slavery men in Kansas, John Brown attempted to jump-start the Civil War by taking over a Virginia (now West Virginia) arsenal. That he was saluted by many prominent northerners was seen as a deep insult to the south.'),
+					A3($author$project$Types$Event, 'Lincoln-Douglas Debates', 1858, 'In their battle for the senate two years before their presidential contest, Stephen Douglas and Abraham Lincoln met in 3-hour discussions that frequently focused on slavery though their home state (Illinois) was a free state.'),
+					A3($author$project$Types$Event, 'Election of Lincoln', 1860, 'Lincoln won the 1860 election without a single electoral vote from the South.'),
+					A3($author$project$Types$Event, 'South Carolina secedes', 1861, 'Following Lincoln\'s election, South Carolina announced the compact between itself and its sister states had already been broken by the actions of the North.'),
+					A3($author$project$Types$Event, 'Formation of the American or \"Know-Nothing\" party', 1844, 'In 1855, this party changed its name from \"The Native American party.\" Commonly known as the \"Know-Nothings,\" it was a nativist, anti-immigrant party that swept Massachusetts elections in the 1850s.'),
+					A3($author$project$Types$Event, 'Formation of the Republican Party', 1856, 'After the Whig party fell apart in response to Bleeding Kansas, Northern (but not southern) Whigs largerly moved to the new Republican Party.'),
+					A3($author$project$Types$Event, 'Formation of the Confederate States of America', 1861, 'In February, seven states formed the CSA with a capital in Montgomery, AL before later moving to Richmond, Virginia. Others joined in March and April including parts of MO and KY.'),
+					A3($author$project$Types$Event, 'Battle of Manassas', 1861, 'First major battle of the Civil War, a Confederate victory, also called the Battle of Bull Run. The extensive causalities signaled a new kind of war.'),
+					A3($author$project$Types$Event, 'Second Confiscation Act', 1862, '\"Congress anticipated Lincoln by passing a law allowing escaped confederate slaves to be considered free; to arm Black men... and to move towards \"colonization.\"'),
+					A3($author$project$Types$Event, 'New York Draft Riots', 1863, 'Violent, often anti-African-American riots in New York City.'),
+					A3($author$project$Types$Event, 'Battle of Antietem', 1862, 'Single most violent day in US History, with nearly 4,000 deaths on September 17 (Constitution Day). Though there was no clear victory,  Lincoln used it the pretext to issue the Preliminary Emancipation Proclamation.'),
+					A3($author$project$Types$Event, 'Preliminary Emancipation Proclamation', 1862, 'On September 22, Lincoln gave the CSA until January 1st to rejoin the union or have their slaves freed by fiat.'),
+					A3($author$project$Types$Event, 'Emancipation Proclamation', 1863, 'On January 1st, Lincoln proclaimed all slaves in the CSA free.'),
+					A3($author$project$Types$Event, 'Battle of Gettsyburg/Vicksburg', 1863, 'These twin summer Union victories after brutal campaigns signaled a turning-point in the war.'),
+					A3($author$project$Types$Event, 'Gettysburg Address', 1863, 'Four score and seven years after the Declaration of Independence, Lincoln issued this brief address.'),
+					A3($author$project$Types$Event, 'Sherman\'s \"March to the Sea\"', 1864, 'William Tecumseh Sherman\'s destructive march across Georgia burned Atlanta and Savannah and signaled imminent Norther'),
+					A3($author$project$Types$Event, 'Surrender at Appomattox', 1865, 'On April 9th. Robert E. Lee surrendered to US Grant in a town called Appomattox Courthouse. '),
+					A3($author$project$Types$Event, 'Lincoln Assassinated', 1865, 'Lincoln was shot on April 14th and died a day later. '),
+					A3($author$project$Types$Event, 'Invention of the Saxophone', 1846, 'Saxophone invented'),
+					A3($author$project$Types$Event, 'Liberty Party changes the election', 1844, 'Henry Clay would have won the election if he had carried New York, but the Liberty Party took enough votes to change the outcome (if they\'d vote for Clay).'),
+					A3($author$project$Types$Event, 'Senate tips to the Free states', 1850, 'With the addition of California,the House, Senate, and Electorial college were dominated by free states.'),
+					A3($author$project$Types$Event, 'Caning of Charles Sumner', 1856, 'In response to Sumner\'s speech refering to the pro-slavery violence in Kansas as representing the \"spew and vomit of an uneasy civilization,\" Congressman Preston Brooks (SC) beat Sumner into a bloody pulp.'),
+					A3($author$project$Types$Event, '\"House Divided Speech\"', 1858, 'In his run for the Senate, Lincoln declared a conpiracy to spread slavery and said the country could not last half slave and half free.')
 				])),
 			_Utils_Tuple2(
 			'VII',
@@ -6061,10 +6167,18 @@ var $author$project$Types$unitToStr = function (u) {
 			return 'II';
 		case 'III':
 			return 'III';
+		case 'IV':
+			return 'IV';
+		case 'V':
+			return 'V';
 		case 'VI':
 			return 'VI';
-		default:
+		case 'VII':
 			return 'VII';
+		case 'VIII':
+			return 'VIII';
+		default:
+			return 'IX';
 	}
 };
 var $elm$core$Maybe$withDefault = F2(
@@ -6757,10 +6871,14 @@ var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('
 var $author$project$Types$I = {$: 'I'};
 var $author$project$Types$II = {$: 'II'};
 var $author$project$Types$III = {$: 'III'};
+var $author$project$Types$IV = {$: 'IV'};
+var $author$project$Types$IX = {$: 'IX'};
+var $author$project$Types$V = {$: 'V'};
 var $author$project$Types$VI = {$: 'VI'};
 var $author$project$Types$VII = {$: 'VII'};
+var $author$project$Types$VIII = {$: 'VIII'};
 var $author$project$Types$unitList = _List_fromArray(
-	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$VI, $author$project$Types$VII]);
+	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$IV, $author$project$Types$V, $author$project$Types$VI, $author$project$Types$VII, $author$project$Types$VIII, $author$project$Types$IX]);
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Types$Select = function (a) {
 	return {$: 'Select', a: a};
@@ -6774,10 +6892,18 @@ var $author$project$Types$unitPeriod = function (u) {
 				return 'Period of Salutary Neglect';
 			case 'III':
 				return 'Federalist Period';
+			case 'IV':
+				return '1800-1840';
+			case 'V':
+				return 'Civil War';
 			case 'VI':
 				return 'Reconstruction';
-			default:
+			case 'VII':
 				return 'Gilded Age';
+			case 'VIII':
+				return 'Age of Empire';
+			default:
+				return 'Progressive Era';
 		}
 	}() + ') ');
 };
