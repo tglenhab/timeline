@@ -54,6 +54,8 @@ type Unit
     | VIII
     | IX
     | X
+    | XI
+    |XII
 
 
 -- Not great that this is needed
@@ -61,7 +63,7 @@ type Unit
 
 unitList : List Unit
 unitList =
-    [ I, II, III, IV, V, VI, VII, VIII, IX, X]
+    [ I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII]
 
 
 unitToStr : Unit -> String
@@ -77,6 +79,8 @@ unitToStr u =
         VIII -> "VIII"
         IX -> "IX"
         X -> "X"
+        XI -> "XI"
+        XII -> "XII"
 
 -- gives a (string) of the start and end dates of the unit
 unitPeriod : Unit -> String
@@ -92,6 +96,8 @@ unitPeriod u =
                 VIII -> "Age of Empire"
                 IX -> "Progressive Era"
                 X -> "New Deal"
-           )
+                XI -> "WWII"
+                XII -> "Cold War"
+            )
         ++ ") "
                 

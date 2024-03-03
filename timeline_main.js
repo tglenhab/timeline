@@ -6187,6 +6187,54 @@ var $author$project$EventList$unitDict = $elm$core$Dict$fromList(
 					A3($author$project$Types$Event, 'West Coast Hotel v. Parrish', 1937, 'After (but unrelated to) the court packing proposal, the Supreme Court decides the New Deal is okay'),
 					A3($author$project$Types$Event, 'WWII begins', 1939, 'Germany invades Poland. The US stays neutral'),
 					A3($author$project$Types$Event, 'Four Freedoms Speech', 1941, 'FDR speaks not only of the Freedom OF speech, but freedom FROM fear and want.')
+				])),
+			_Utils_Tuple2(
+			'XI',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Cash and Carry Act', 1939, 'Modifying the neutrality act, the Cash-and-Carry Act limited trade with countries at war to those who could pay cash and carry the goods away (i.e., UK)'),
+					A3($author$project$Types$Event, 'Lend-Lease Act', 1941, '\"Going further than the Cash and Carry Act, Lend-Lease loaned money to the UK for war supplies in return for leases in the British Caribbean.\"'),
+					A3($author$project$Types$Event, 'Pearl Harbor', 1941, 'A day that shall live in world history/infamy.'),
+					A3($author$project$Types$Event, 'Executive Order 8802', 1941, 'After Randolph\'s treatened March on Washington, FDR agreed to desegregate defense jobs.'),
+					A3($author$project$Types$Event, 'Executive Order 9088', 1942, 'FDR announced broad permissions for the military to respond to the threat of the war, allowing for the Internment.'),
+					A3($author$project$Types$Event, 'Jackie Robinson!', 1947, 'The Dodgers desegrated baseball!'),
+					A3($author$project$Types$Event, 'What the Negro Wants', 1944, 'Best selling book that challenged the idea that Black Americans were content with Jim Crow America.'),
+					A3($author$project$Types$Event, 'Race and Racism', 1942, 'Ruth Benedict\'s book, like Montague\'s MAN\'S MOST DANGEROUS FALLACY challenged the idea of race as a biological concept.'),
+					A3($author$project$Types$Event, 'The Road to Serfdom', 1943, 'Hayek\'s book warned against the political dangers of a planned economy.'),
+					A3($author$project$Types$Event, 'The American Dilemma', 1944, 'Gunner Myrdal\'s book argued that racism was making a \"vicious circle.\"'),
+					A3($author$project$Types$Event, 'First Book-of-the-Month club selection by a Black author', 1940, 'Richard Wright\'s book, NATIVE SON, depicted the violent and intellectually-limited Bigger Thomas as a product (\"native son\") of his environment.'),
+					A3($author$project$Types$Event, 'Korematsu', 1944, 'Court case about the Japanese-American internment argued that it was not racism that led the military to determine they could not separate loyal from non-loyal people of Japanese descent.'),
+					A3($author$project$Types$Event, 'Desegregation of the Military', 1948, 'After the brutal attack on a Black GI, Truman issued the order.'),
+					A3($author$project$Types$Event, 'Civil Rights Plank in Democratic Platform', 1948, 'The full-throated rejection of States\' Rights caused a walk out.'),
+					A3($author$project$Types$Event, 'Dixiecrats', 1948, 'Southern states run their own candidate after the Democrats add a anti-states\' rights Civil Rights Plank.')
+				])),
+			_Utils_Tuple2(
+			'XII',
+			_List_fromArray(
+				[
+					A3($author$project$Types$Event, 'Marshall Plan', 1948, 'To combat the threat of Communism, the US *gave* money to European countries to save our system, the capitalist system, from crackpot ideas.'),
+					A3($author$project$Types$Event, 'Truman Doctrine', 1947, 'In response to the UK pulling back from a leadership role, Truman announced the US would stand up to support countries struggling with Communism.'),
+					A3($author$project$Types$Event, 'NATO founded', 1949, 'The founding of the North Atlantic Treaty Organization after the Soviet development of the bomb (and other aggressive behavior)'),
+					A3($author$project$Types$Event, 'UN Founded', 1945, 'This time, the US is part, in large part thanks a veto on the security council.'),
+					A3($author$project$Types$Event, 'Bretton Woods', 1944, 'It\'s not just the UN! World government means attention to the world economy with a World Bank, the dollar as the world currency, and an International Monetary Fund.'),
+					A3($author$project$Types$Event, 'World Bank Founded', 1944, 'In an attempt to avoid future depressions and enhance capitalism, the World Bank was formed. For the differnece with the IMF, see https://www.imf.org/-/media/Files/Publications/Miscellaneous/English/2016/imf-wb-how-do-they-differ.ashx'),
+					A3($author$project$Types$Event, 'International Monetary Fund Founded', 1944, 'In an attempt to avoid future depressions and enhance capitalism, the IMF was formed. For the differnece with the World Bank, see https://www.imf.org/-/media/Files/Publications/Miscellaneous/English/2016/imf-wb-how-do-they-differ.ashx'),
+					A3($author$project$Types$Event, 'First Atomic Bomb', 1945, 'The gadget was tested in the Trinity Test in July; dropped first on Hiroshima on August 8th.'),
+					A3($author$project$Types$Event, 'First Hydrogen Bomb', 1954, 'Considerably more destructive than the A-Bomb, the H-homb heightened fears of nuclear armageddeon. '),
+					A3($author$project$Types$Event, 'Russia gets the Bomb', 1949, 'But that\'s okay/the balance of power\'s maintained that way.'),
+					A3($author$project$Types$Event, 'Mao Chairman of China', 1949, 'Unitl Nixon visits the People\'s Republic, the US will consider Taiwan (the Republic of China) to be \"China.\"'),
+					A3($author$project$Types$Event, 'Korean War Begins', 1950, 'Beginning of the Korean War. It is not officially over.'),
+					A3($author$project$Types$Event, 'Truman puts the Bomb under Civilian Control', 1946, '\"The buck stops here.\"'),
+					A3($author$project$Types$Event, 'McCarran Internal Security Act', 1950, 'Truman vetoed this act for its chilling effect on speech... congress overrode overwhelmingly...'),
+					A3($author$project$Types$Event, 'First Levittown', 1947, 'After the Franck Report encouraged spreading out the population, the gov\'t supported more housing in the suburbs, helped on by Levitt and others\' prefab homes...'),
+					A3($author$project$Types$Event, 'Eisenhower Defensive Highway Act', 1956, 'After the Franck Report encouraged spreading out the population, the gov\'t supported highways!'),
+					A3($author$project$Types$Event, 'Eisenhower warns of the \"Military Industrial Complex\"', 1960, 'Eisenhower warns of the \"Military Industrial Complex\"'),
+					A3($author$project$Types$Event, 'US helps coup in Guatemala', 1954, 'On the urging of United Fruit, the US helps overthrown Jacobo Guzman Arbenz'),
+					A3($author$project$Types$Event, 'Wheeling Speech', 1950, 'Senator Joseph McCarthy begins with the McCarthy era with a speech implying Communists are in the State Department...'),
+					A3($author$project$Types$Event, '\"Declaration of Conscience\"', 1950, 'Margaret Chase Smith speaks out agaist McCarthy'),
+					A3($author$project$Types$Event, 'US helps install Shah in Iran', 1955, 'Operation Ajax overthrowns democratically-elected President Moseddegh'),
+					A3($author$project$Types$Event, 'Sputnik', 1957, 'First manmade satellite!'),
+					A3($author$project$Types$Event, 'Cuban Revolution', 1959, 'Fidel Castro establishes a Communist country 90 miles from the US')
 				]))
 		]));
 var $author$project$Types$unitToStr = function (u) {
@@ -6209,8 +6257,12 @@ var $author$project$Types$unitToStr = function (u) {
 			return 'VIII';
 		case 'IX':
 			return 'IX';
-		default:
+		case 'X':
 			return 'X';
+		case 'XI':
+			return 'XI';
+		default:
+			return 'XII';
 	}
 };
 var $elm$core$Maybe$withDefault = F2(
@@ -6910,8 +6962,10 @@ var $author$project$Types$VI = {$: 'VI'};
 var $author$project$Types$VII = {$: 'VII'};
 var $author$project$Types$VIII = {$: 'VIII'};
 var $author$project$Types$X = {$: 'X'};
+var $author$project$Types$XI = {$: 'XI'};
+var $author$project$Types$XII = {$: 'XII'};
 var $author$project$Types$unitList = _List_fromArray(
-	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$IV, $author$project$Types$V, $author$project$Types$VI, $author$project$Types$VII, $author$project$Types$VIII, $author$project$Types$IX, $author$project$Types$X]);
+	[$author$project$Types$I, $author$project$Types$II, $author$project$Types$III, $author$project$Types$IV, $author$project$Types$V, $author$project$Types$VI, $author$project$Types$VII, $author$project$Types$VIII, $author$project$Types$IX, $author$project$Types$X, $author$project$Types$XI, $author$project$Types$XII]);
 var $elm$html$Html$Attributes$value = $elm$html$Html$Attributes$stringProperty('value');
 var $author$project$Types$Select = function (a) {
 	return {$: 'Select', a: a};
@@ -6937,8 +6991,12 @@ var $author$project$Types$unitPeriod = function (u) {
 				return 'Age of Empire';
 			case 'IX':
 				return 'Progressive Era';
-			default:
+			case 'X':
 				return 'New Deal';
+			case 'XI':
+				return 'WWII';
+			default:
+				return 'Cold War';
 		}
 	}() + ') ');
 };
