@@ -179,7 +179,10 @@ view : Model -> Browser.Document Msg
 view model =
     Browser.Document
         "Timeline"
-        [ div [ style "margin" "20px" ]
+        [ div
+            [ style "margin" "20px"
+            , style "top" "0"
+            ]
             [ case model of
                 Setup m ->
                     viewSetup m
@@ -197,10 +200,26 @@ view model =
                     viewEnded s l
             , div []
                 [ case model of
-                      MoreInfo _ _ -> span [] []
-                      Wrong _ _ _ _ -> span [] []
-                      _ -> (button [ onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline")) ]
-                                      [ text "More info" ])
+                    MoreInfo _ _ ->
+                        span [] []
+
+                    Wrong _ _ _ _ ->
+                        span [] []
+
+                    _ ->
+                        button
+                            [ style "background-color" "rgb(130, 100, 130)"
+                            , style "color" "white"
+                            , style "border" "none"
+                            , style "height" "45px"
+                            , style "width" "100px"
+                            , style "text-align" "center"
+                            , style "vertical-align" "middle"
+                            , style "text-decoration" "none"
+                            , style "border-radius" "10px"
+                            , onClick (LearnMore (Event "About Timeline" 0 "Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline"))
+                            ]
+                            [ text "More info" ]
                 ]
             ]
         ]
@@ -209,29 +228,135 @@ view model =
 viewSetup : SetupModel -> Html Msg
 viewSetup model =
     div []
-        [ h1 [] [ text "Welcome to timeline!" ]
+        [ div
+            [ style "display" "flex"
+            , style "flex-direction" "row"
+            , style "justify-content" "center"
+            ]
+            [ h1 [ style "font-weight" "900" ] [ text "Welcome to timeline!" ]
+            ]
         , div
             [ style "display" "flex"
             , style "flex-direction" "row"
-            , style "justify-content" "space-around"
+            , style "justify-content" "center"
+            , style "gap" "5%"
             ]
             [ div []
                 [ h2 [] [ text "Select units to study" ]
-                , div [] (List.map (viewUnitSelect model.units) unitList)
+                , div
+                    [ style "display" "flex"
+                    , style "flex-direction" "column"
+                    , style "justify-content" "center"
+                    ]
+                    (List.map (viewUnitSelect model.units) unitList)
                 ]
             , div []
                 [ h2 [] [ text "Select number of cards to study" ]
-                , button [ onClick (ChangeNum (String.fromInt (model.size - 1))) ] [ text "-" ]
-                , input [ onInput ChangeNum, value (String.fromInt model.size) ] []
-                , button [ onClick (ChangeNum (String.fromInt (model.size + 1))) ] [ text "+" ]
+                , div
+                    [ style "display" "flex"
+                    , style "flex-direction" "row"
+                    , style "justify-content" "center"
+                    ]
+                    [ button
+                        [ style "background-color" "#A0B2C4"
+                        , style "color" "white"
+                        , style "text-align" "center"
+                        , style "border" "none"
+                        , style "height" "25px"
+                        , style "width" "25px"
+                        , style "margin" "5px"
+                        , style "text-align" "center"
+                        , style "text-decoration" "none"
+                        , style "display" "inline-block"
+                        , style "font-size" "16px"
+                        , style "border-radius" "15%"
+                        , style "cursor" "pointer"
+                        , style "box-shadow" "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        , onClick (ChangeNum (String.fromInt (model.size - 1)))
+                        ]
+                        [ text "-" ]
+                    , input
+                        [ style "background-color" "#A0B2C4"
+                        , style "color" "white"
+                        , style "text-align" "center"
+                        , style "border" "none"
+                        , style "height" "25px"
+                        , style "width" "25px"
+                        , style "margin" "5px"
+                        , style "text-align" "center"
+                        , style "text-decoration" "none"
+                        , style "display" "inline-block"
+                        , style "font-size" "16px"
+                        , style "border-radius" "15%"
+                        , style "cursor" "pointer"
+                        , style "box-shadow" "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        , onInput ChangeNum
+                        , value (String.fromInt model.size)
+                        ]
+                        []
+                    , button
+                        [ style "background-color" "#A0B2C4"
+                        , style "color" "white"
+                        , style "border" "none"
+                        , style "height" "25px"
+                        , style "width" "25px"
+                        , style "margin" "5px"
+                        , style "text-align" "center"
+                        , style "text-align" "center"
+                        , style "text-decoration" "none"
+                        , style "display" "inline-block"
+                        , style "font-size" "16px"
+                        , style "border-radius" "15%"
+                        , style "cursor" "pointer"
+                        , style "box-shadow" "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        , onClick (ChangeNum (String.fromInt (model.size + 1)))
+                        ]
+                        [ text "+" ]
+                    ]
                 ]
             , div []
-                [ h2 [] [ text "hard mode" ]
-                , input [ onClick ChangeHardMode, type_ "checkbox", checked model.hardMode ] []
-                , text "hard mode"
-                , button [ onClick (LearnMore (Event "About Timeline" 0 "In Hard Mode, you cannot learn about events until they are on the board")) ] [ text "?" ]
+                [ div []
+                    [ h2 [] [ text "Enable Hard Mode" ]
+                    , div
+                        [ style "display" "flex"
+                        , style "flex-direction" "row"
+                        , style "justify-content" "center"
+                        ]
+                        [ input [ onClick ChangeHardMode, type_ "checkbox", checked model.hardMode ] []
+                        , text "Hard Mode"
+                        , button
+                            [ style "background-color" "#A0B2C4"
+                            , style "color" "white"
+                            , style "border" "none"
+                            , style "border-radius" "50%"
+                            , style "margin-left" "5px"
+                            , onClick (LearnMore (Event "About Timeline" 0 "In Hard Mode, you cannot learn about events until they are on the board"))
+                            ]
+                            [ text "?" ]
+                        ]
+                    ]
                 ]
-            , button [ onClick Start ] [ h3 [] [ text "Start!" ] ]
+            ]
+        , div
+            [ style "display" "flex"
+            , style "flex-direction" "row"
+            , style "justify-content" "center"
+            ]
+            [ button
+                [ style "background-color" "rgb(10, 160, 70)"
+                , style "color" "white"
+                , style "border" "none"
+                , style "padding" "0.8rem 5.2rem"
+                , style "text-align" "center"
+                , style "margin-top" "50px"
+                , style "margin-bottom" "20px"
+                , style "vertical-align" "middle"
+                , style "text-decoration" "none"
+                , style "border-radius" "10px"
+                , style "font-size" "1.5rem"
+                , onClick Start
+                ]
+                [ text "Start!" ]
             ]
         ]
 
@@ -254,10 +379,25 @@ viewPlay model =
     div []
         [ h1 [] [ text "Timeline" ]
         , span []
-            [ text "event: "
+            [ text "Event: "
             , span [ style "text-decoration" "underline" ] [ text model.active.name ]
             , if not model.hardMode then
-                div [] [button [ onClick (LearnMore model.active) ] [ text "learn more" ]]
+                div []
+                    [ button
+                        [ style "background-color" "rgb(10, 100, 240)"
+                        , style "color" "white"
+                        , style "border" "none"
+                        , style "padding" "0.4rem 0.4rem"
+                        , style "margin" "2px"
+                        , style "text-align" "center"
+                        , style "vertical-align" "middle"
+                        , style "text-decoration" "none"
+                        , style "border-radius" "4px"
+                        , style "font-size" "1rem"
+                        , onClick (LearnMore model.active)
+                        ]
+                        [ text "learn more" ]
+                    ]
 
               else
                 span [] []
@@ -287,13 +427,15 @@ viewTimeline listEvents =
         placedDates =
             List.map
                 (\e ->
-                    div [ style "display" "flex"
+                    div
+                        [ style "display" "flex"
                         , style "flex-direction" "column"
                         , style "justify-content" "space-around"
                         , style "align-items" "center"
                         , style "padding" "10px"
                         , style "margin" "10px"
-                        , style "border-style" "solid"]
+                        , style "border-style" "solid"
+                        ]
                         [ h3 [] [ text e.name ]
                         , div [] [ text (String.fromInt e.date) ]
                         , button [ onClick (LearnMore e) ] [ text "learn more" ]
@@ -306,14 +448,13 @@ viewTimeline listEvents =
         , style "flex-direction" "column"
         , style "justify-content" "space-around"
         , style "align-items" "center"
+
         --, style "flex-wrap" "wrap"
         ]
-        
-    (listInterleave
-         selectionButtons
-         placedDates
-    )
-    
+        (listInterleave
+            selectionButtons
+            placedDates
+        )
 
 
 viewMoreInfo : Event -> Html Msg
