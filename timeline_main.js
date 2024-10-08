@@ -6598,24 +6598,41 @@ var $author$project$Main$viewEnded = F2(
 	function (i, listEvents) {
 		return A2(
 			$elm$html$Html$div,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+					A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+					A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+				]),
 			_List_fromArray(
 				[
 					A2(
-					$elm$html$Html$h3,
-					_List_Nil,
+					$elm$html$Html$div,
 					_List_fromArray(
 						[
-							$elm$html$Html$text(
-							'You got ' + ($elm$core$String$fromInt(i) + ('/' + $elm$core$String$fromInt(
-								$elm$core$List$length(listEvents) - 1))))
+							A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+							A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+							A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+						]),
+					_List_fromArray(
+						[
+							A2(
+							$elm$html$Html$h3,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text(
+									'You got ' + ($elm$core$String$fromInt(i) + ('/' + $elm$core$String$fromInt(
+										$elm$core$List$length(listEvents) - 1))))
+								]))
 						])),
 					A2(
 					$elm$html$Html$div,
 					_List_fromArray(
 						[
 							A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-							A2($elm$html$Html$Attributes$style, 'flex-direction', 'row')
+							A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+							A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
 						]),
 					A2(
 						$elm$core$List$map,
@@ -6624,20 +6641,37 @@ var $author$project$Main$viewEnded = F2(
 								$elm$html$Html$div,
 								_List_fromArray(
 									[
-										A2($elm$html$Html$Attributes$style, 'border-style', 'solid')
+										A2($elm$html$Html$Attributes$style, 'border-style', 'solid'),
+										A2($elm$html$Html$Attributes$style, 'padding', '10px'),
+										A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+										A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+										A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
 									]),
 								_List_fromArray(
 									[
 										A2(
 										$elm$html$Html$h3,
-										_List_Nil,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'margin', '0px'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem')
+											]),
 										_List_fromArray(
 											[
 												$elm$html$Html$text(e.name)
 											])),
 										A2(
 										$elm$html$Html$div,
-										_List_Nil,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+												A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+												A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+												A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+												A2($elm$html$Html$Attributes$style, 'margin-bottom', '10px'),
+												A2($elm$html$Html$Attributes$style, 'margin-top', '5px'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem')
+											]),
 										_List_fromArray(
 											[
 												$elm$html$Html$text(
@@ -6647,6 +6681,17 @@ var $author$project$Main$viewEnded = F2(
 										$elm$html$Html$button,
 										_List_fromArray(
 											[
+												A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 100, 240)'),
+												A2($elm$html$Html$Attributes$style, 'color', 'white'),
+												A2($elm$html$Html$Attributes$style, 'border', 'none'),
+												A2($elm$html$Html$Attributes$style, 'margin-top', '20px'),
+												A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.4rem'),
+												A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+												A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+												A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
 												$elm$html$Html$Events$onClick(
 												$author$project$Types$LearnMore(e))
 											]),
@@ -6666,6 +6711,17 @@ var $author$project$Main$viewEnded = F2(
 					$elm$html$Html$button,
 					_List_fromArray(
 						[
+							A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10,180, 60)'),
+							A2($elm$html$Html$Attributes$style, 'color', 'white'),
+							A2($elm$html$Html$Attributes$style, 'border', 'none'),
+							A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.4rem'),
+							A2($elm$html$Html$Attributes$style, 'margin', '0px 40vw'),
+							A2($elm$html$Html$Attributes$style, 'margin-top', '20px'),
+							A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+							A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+							A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+							A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+							A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
 							$elm$html$Html$Events$onClick($author$project$Types$Back)
 						]),
 					_List_fromArray(
@@ -6678,7 +6734,17 @@ var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $author$project$Main$viewMoreInfo = function (event) {
 	return A2(
 		$elm$html$Html$div,
-		_List_Nil,
+		_List_fromArray(
+			[
+				A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+				A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+				A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+				A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+				A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(220, 220, 220)'),
+				A2($elm$html$Html$Attributes$style, 'padding', '20px'),
+				A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+				A2($elm$html$Html$Attributes$style, 'margin', '10px')
+			]),
 		_List_fromArray(
 			[
 				A2(
@@ -6690,7 +6756,15 @@ var $author$project$Main$viewMoreInfo = function (event) {
 					])),
 				A2(
 				$elm$html$Html$div,
-				_List_Nil,
+				_List_fromArray(
+					[
+						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+						A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+						A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+						A2($elm$html$Html$Attributes$style, 'margin-bottom', '10px'),
+						A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem')
+					]),
 				_List_fromArray(
 					[
 						$elm$html$Html$text(event.desc)
@@ -6699,6 +6773,17 @@ var $author$project$Main$viewMoreInfo = function (event) {
 				$elm$html$Html$button,
 				_List_fromArray(
 					[
+						A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 100, 240)'),
+						A2($elm$html$Html$Attributes$style, 'color', 'white'),
+						A2($elm$html$Html$Attributes$style, 'border', 'none'),
+						A2($elm$html$Html$Attributes$style, 'margin-top', '20px'),
+						A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.6rem'),
+						A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+						A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+						A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+						A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+						A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+						A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
 						$elm$html$Html$Events$onClick($author$project$Types$Back)
 					]),
 				_List_fromArray(
@@ -6765,20 +6850,35 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 						A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
 						A2($elm$html$Html$Attributes$style, 'padding', '10px'),
 						A2($elm$html$Html$Attributes$style, 'margin', '10px'),
-						A2($elm$html$Html$Attributes$style, 'border-style', 'solid')
+						A2($elm$html$Html$Attributes$style, 'border', '2px solid rgb(170, 170, 170)'),
+						A2($elm$html$Html$Attributes$style, 'width', '200px'),
+						A2($elm$html$Html$Attributes$style, 'min-width', '300px'),
+						A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+						A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(220, 220, 220)')
 					]),
 				_List_fromArray(
 					[
 						A2(
 						$elm$html$Html$h3,
-						_List_Nil,
+						_List_fromArray(
+							[
+								A2($elm$html$Html$Attributes$style, 'margin', '5px'),
+								A2($elm$html$Html$Attributes$style, 'text-align', 'center')
+							]),
 						_List_fromArray(
 							[
 								$elm$html$Html$text(e.name)
 							])),
 						A2(
 						$elm$html$Html$div,
-						_List_Nil,
+						_List_fromArray(
+							[
+								A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+								A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+								A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+								A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+								A2($elm$html$Html$Attributes$style, 'margin-bottom', '10px')
+							]),
 						_List_fromArray(
 							[
 								$elm$html$Html$text(
@@ -6788,6 +6888,16 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 						$elm$html$Html$button,
 						_List_fromArray(
 							[
+								A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 100, 240)'),
+								A2($elm$html$Html$Attributes$style, 'color', 'white'),
+								A2($elm$html$Html$Attributes$style, 'border', 'none'),
+								A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.4rem'),
+								A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+								A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+								A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+								A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+								A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+								A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
 								$elm$html$Html$Events$onClick(
 								$author$project$Types$LearnMore(e))
 							]),
@@ -6818,12 +6928,21 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 					$elm$html$Html$button,
 					_List_fromArray(
 						[
+							A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(173, 185, 202)'),
+							A2($elm$html$Html$Attributes$style, 'color', 'white'),
+							A2($elm$html$Html$Attributes$style, 'border', 'none'),
+							A2($elm$html$Html$Attributes$style, 'padding', '0.6rem 0.8rem'),
+							A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+							A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+							A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+							A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+							A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
 							$elm$html$Html$Events$onClick(
 							A2($author$project$Types$Guess, r, l))
 						]),
 					_List_fromArray(
 						[
-							$elm$html$Html$text('here')
+							$elm$html$Html$text('Here')
 						]));
 			}),
 		leftDates,
@@ -6833,9 +6952,16 @@ var $author$project$Main$viewTimeline = function (listEvents) {
 		_List_fromArray(
 			[
 				A2($elm$html$Html$Attributes$style, 'display', 'flex'),
-				A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
-				A2($elm$html$Html$Attributes$style, 'justify-content', 'space-around'),
-				A2($elm$html$Html$Attributes$style, 'align-items', 'center')
+				A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+				A2($elm$html$Html$Attributes$style, 'justify-content', 'left'),
+				A2($elm$html$Html$Attributes$style, 'gap', '10px'),
+				A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+				A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(220, 220, 220)'),
+				A2($elm$html$Html$Attributes$style, 'padding', '50px'),
+				A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+				A2($elm$html$Html$Attributes$style, 'margin', '10px'),
+				A2($elm$html$Html$Attributes$style, 'overflow-x', 'scroll'),
+				A2($elm$html$Html$Attributes$style, 'max-width', '100%')
 			]),
 		A2($author$project$Util$listInterleave, selectionButtons, placedDates));
 };
@@ -6846,45 +6972,85 @@ var $author$project$Main$viewPlay = function (model) {
 		_List_fromArray(
 			[
 				A2(
-				$elm$html$Html$h1,
-				_List_Nil,
+				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						$elm$html$Html$text('Timeline')
-					])),
-				A2(
-				$elm$html$Html$span,
-				_List_Nil,
+						A2($elm$html$Html$Attributes$style, 'background-color', 'lightgray'),
+						A2($elm$html$Html$Attributes$style, 'padding', '10px'),
+						A2($elm$html$Html$Attributes$style, 'margin', '10px'),
+						A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+						A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+						A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text('event: '),
+						A2(
+						$elm$html$Html$h1,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Timeline')
+							])),
 						A2(
 						$elm$html$Html$span,
 						_List_fromArray(
 							[
-								A2($elm$html$Html$Attributes$style, 'text-decoration', 'underline')
+								A2($elm$html$Html$Attributes$style, 'font-weight', 'bold'),
+								A2($elm$html$Html$Attributes$style, 'background-color', 'gray'),
+								A2($elm$html$Html$Attributes$style, 'padding', '15px'),
+								A2($elm$html$Html$Attributes$style, 'border-radius', '5px'),
+								A2($elm$html$Html$Attributes$style, 'color', 'white'),
+								A2($elm$html$Html$Attributes$style, 'margin', '5px')
 							]),
 						_List_fromArray(
 							[
-								$elm$html$Html$text(model.active.name)
-							])),
-						(!model.hardMode) ? A2(
-						$elm$html$Html$div,
-						_List_Nil,
-						_List_fromArray(
-							[
+								$elm$html$Html$text('Event: '),
 								A2(
-								$elm$html$Html$button,
+								$elm$html$Html$span,
 								_List_fromArray(
 									[
-										$elm$html$Html$Events$onClick(
-										$author$project$Types$LearnMore(model.active))
+										A2($elm$html$Html$Attributes$style, 'text-decoration', 'underline')
 									]),
 								_List_fromArray(
 									[
-										$elm$html$Html$text('learn more')
-									]))
-							])) : A2($elm$html$Html$span, _List_Nil, _List_Nil)
+										$elm$html$Html$text(model.active.name)
+									])),
+								(!model.hardMode) ? A2(
+								$elm$html$Html$div,
+								_List_fromArray(
+									[
+										A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+										A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+										A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+										A2($elm$html$Html$Attributes$style, 'margin-top', '10px')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										$elm$html$Html$button,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 100, 240)'),
+												A2($elm$html$Html$Attributes$style, 'color', 'white'),
+												A2($elm$html$Html$Attributes$style, 'border', 'none'),
+												A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.4rem'),
+												A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+												A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+												A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
+												$elm$html$Html$Events$onClick(
+												$author$project$Types$LearnMore(model.active))
+											]),
+										_List_fromArray(
+											[
+												$elm$html$Html$text('learn more')
+											]))
+									])) : A2($elm$html$Html$span, _List_Nil, _List_Nil)
+							]))
 					])),
 				$author$project$Main$viewTimeline(
 				A2(
@@ -7029,11 +7195,25 @@ var $author$project$Main$viewSetup = function (model) {
 		_List_fromArray(
 			[
 				A2(
-				$elm$html$Html$h1,
-				_List_Nil,
+				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						$elm$html$Html$text('Welcome to timeline!')
+						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+						A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+					]),
+				_List_fromArray(
+					[
+						A2(
+						$elm$html$Html$h1,
+						_List_fromArray(
+							[
+								A2($elm$html$Html$Attributes$style, 'font-weight', '900')
+							]),
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Welcome to timeline!')
+							]))
 					])),
 				A2(
 				$elm$html$Html$div,
@@ -7041,7 +7221,8 @@ var $author$project$Main$viewSetup = function (model) {
 					[
 						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
 						A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
-						A2($elm$html$Html$Attributes$style, 'justify-content', 'space-around')
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+						A2($elm$html$Html$Attributes$style, 'gap', '5%')
 					]),
 				_List_fromArray(
 					[
@@ -7059,7 +7240,12 @@ var $author$project$Main$viewSetup = function (model) {
 									])),
 								A2(
 								$elm$html$Html$div,
-								_List_Nil,
+								_List_fromArray(
+									[
+										A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+										A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+										A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+									]),
 								A2(
 									$elm$core$List$map,
 									$author$project$Main$viewUnitSelect(model.units),
@@ -7078,37 +7264,90 @@ var $author$project$Main$viewSetup = function (model) {
 										$elm$html$Html$text('Select number of cards to study')
 									])),
 								A2(
-								$elm$html$Html$button,
+								$elm$html$Html$div,
 								_List_fromArray(
 									[
-										$elm$html$Html$Events$onClick(
-										$author$project$Types$ChangeNum(
-											$elm$core$String$fromInt(model.size - 1)))
+										A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+										A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+										A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
 									]),
 								_List_fromArray(
 									[
-										$elm$html$Html$text('-')
-									])),
-								A2(
-								$elm$html$Html$input,
-								_List_fromArray(
-									[
-										$elm$html$Html$Events$onInput($author$project$Types$ChangeNum),
-										$elm$html$Html$Attributes$value(
-										$elm$core$String$fromInt(model.size))
-									]),
-								_List_Nil),
-								A2(
-								$elm$html$Html$button,
-								_List_fromArray(
-									[
-										$elm$html$Html$Events$onClick(
-										$author$project$Types$ChangeNum(
-											$elm$core$String$fromInt(model.size + 1)))
-									]),
-								_List_fromArray(
-									[
-										$elm$html$Html$text('+')
+										A2(
+										$elm$html$Html$button,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'background-color', '#A0B2C4'),
+												A2($elm$html$Html$Attributes$style, 'color', 'white'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'border', 'none'),
+												A2($elm$html$Html$Attributes$style, 'height', '25px'),
+												A2($elm$html$Html$Attributes$style, 'width', '25px'),
+												A2($elm$html$Html$Attributes$style, 'margin', '5px'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+												A2($elm$html$Html$Attributes$style, 'display', 'inline-block'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '16px'),
+												A2($elm$html$Html$Attributes$style, 'border-radius', '15%'),
+												A2($elm$html$Html$Attributes$style, 'cursor', 'pointer'),
+												A2($elm$html$Html$Attributes$style, 'box-shadow', '0 4px 6px rgba(0, 0, 0, 0.1)'),
+												$elm$html$Html$Events$onClick(
+												$author$project$Types$ChangeNum(
+													$elm$core$String$fromInt(model.size - 1)))
+											]),
+										_List_fromArray(
+											[
+												$elm$html$Html$text('-')
+											])),
+										A2(
+										$elm$html$Html$input,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'background-color', '#A0B2C4'),
+												A2($elm$html$Html$Attributes$style, 'color', 'white'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'border', 'none'),
+												A2($elm$html$Html$Attributes$style, 'height', '25px'),
+												A2($elm$html$Html$Attributes$style, 'width', '25px'),
+												A2($elm$html$Html$Attributes$style, 'margin', '5px'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+												A2($elm$html$Html$Attributes$style, 'display', 'inline-block'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '16px'),
+												A2($elm$html$Html$Attributes$style, 'border-radius', '15%'),
+												A2($elm$html$Html$Attributes$style, 'cursor', 'pointer'),
+												A2($elm$html$Html$Attributes$style, 'box-shadow', '0 4px 6px rgba(0, 0, 0, 0.1)'),
+												$elm$html$Html$Events$onInput($author$project$Types$ChangeNum),
+												$elm$html$Html$Attributes$value(
+												$elm$core$String$fromInt(model.size))
+											]),
+										_List_Nil),
+										A2(
+										$elm$html$Html$button,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'background-color', '#A0B2C4'),
+												A2($elm$html$Html$Attributes$style, 'color', 'white'),
+												A2($elm$html$Html$Attributes$style, 'border', 'none'),
+												A2($elm$html$Html$Attributes$style, 'height', '25px'),
+												A2($elm$html$Html$Attributes$style, 'width', '25px'),
+												A2($elm$html$Html$Attributes$style, 'margin', '5px'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+												A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+												A2($elm$html$Html$Attributes$style, 'display', 'inline-block'),
+												A2($elm$html$Html$Attributes$style, 'font-size', '16px'),
+												A2($elm$html$Html$Attributes$style, 'border-radius', '15%'),
+												A2($elm$html$Html$Attributes$style, 'cursor', 'pointer'),
+												A2($elm$html$Html$Attributes$style, 'box-shadow', '0 4px 6px rgba(0, 0, 0, 0.1)'),
+												$elm$html$Html$Events$onClick(
+												$author$project$Types$ChangeNum(
+													$elm$core$String$fromInt(model.size + 1)))
+											]),
+										_List_fromArray(
+											[
+												$elm$html$Html$text('+')
+											]))
 									]))
 							])),
 						A2(
@@ -7117,50 +7356,88 @@ var $author$project$Main$viewSetup = function (model) {
 						_List_fromArray(
 							[
 								A2(
-								$elm$html$Html$h2,
+								$elm$html$Html$div,
 								_List_Nil,
 								_List_fromArray(
 									[
-										$elm$html$Html$text('hard mode')
-									])),
-								A2(
-								$elm$html$Html$input,
-								_List_fromArray(
-									[
-										$elm$html$Html$Events$onClick($author$project$Types$ChangeHardMode),
-										$elm$html$Html$Attributes$type_('checkbox'),
-										$elm$html$Html$Attributes$checked(model.hardMode)
-									]),
-								_List_Nil),
-								$elm$html$Html$text('hard mode'),
-								A2(
-								$elm$html$Html$button,
-								_List_fromArray(
-									[
-										$elm$html$Html$Events$onClick(
-										$author$project$Types$LearnMore(
-											A3($author$project$Types$Event, 'About Timeline', 0, 'In Hard Mode, you cannot learn about events until they are on the board')))
-									]),
-								_List_fromArray(
-									[
-										$elm$html$Html$text('?')
+										A2(
+										$elm$html$Html$h2,
+										_List_Nil,
+										_List_fromArray(
+											[
+												$elm$html$Html$text('Enable Hard Mode')
+											])),
+										A2(
+										$elm$html$Html$div,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+												A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+												A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+											]),
+										_List_fromArray(
+											[
+												A2(
+												$elm$html$Html$input,
+												_List_fromArray(
+													[
+														$elm$html$Html$Events$onClick($author$project$Types$ChangeHardMode),
+														$elm$html$Html$Attributes$type_('checkbox'),
+														$elm$html$Html$Attributes$checked(model.hardMode)
+													]),
+												_List_Nil),
+												$elm$html$Html$text('Hard Mode'),
+												A2(
+												$elm$html$Html$button,
+												_List_fromArray(
+													[
+														A2($elm$html$Html$Attributes$style, 'background-color', '#A0B2C4'),
+														A2($elm$html$Html$Attributes$style, 'color', 'white'),
+														A2($elm$html$Html$Attributes$style, 'border', 'none'),
+														A2($elm$html$Html$Attributes$style, 'border-radius', '50%'),
+														A2($elm$html$Html$Attributes$style, 'margin-left', '5px'),
+														$elm$html$Html$Events$onClick(
+														$author$project$Types$LearnMore(
+															A3($author$project$Types$Event, 'About Timeline', 0, 'In Hard Mode, you cannot learn about events until they are on the board')))
+													]),
+												_List_fromArray(
+													[
+														$elm$html$Html$text('?')
+													]))
+											]))
 									]))
-							])),
+							]))
+					])),
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+						A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+						A2($elm$html$Html$Attributes$style, 'justify-content', 'center')
+					]),
+				_List_fromArray(
+					[
 						A2(
 						$elm$html$Html$button,
 						_List_fromArray(
 							[
+								A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 160, 70)'),
+								A2($elm$html$Html$Attributes$style, 'color', 'white'),
+								A2($elm$html$Html$Attributes$style, 'border', 'none'),
+								A2($elm$html$Html$Attributes$style, 'padding', '0.8rem 5.2rem'),
+								A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+								A2($elm$html$Html$Attributes$style, 'margin-top', '50px'),
+								A2($elm$html$Html$Attributes$style, 'margin-bottom', '20px'),
+								A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+								A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+								A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+								A2($elm$html$Html$Attributes$style, 'font-size', '1.5rem'),
 								$elm$html$Html$Events$onClick($author$project$Types$Start)
 							]),
 						_List_fromArray(
 							[
-								A2(
-								$elm$html$Html$h3,
-								_List_Nil,
-								_List_fromArray(
-									[
-										$elm$html$Html$text('Start!')
-									]))
+								$elm$html$Html$text('Start!')
 							]))
 					]))
 			]));
@@ -7194,7 +7471,17 @@ var $author$project$Main$viewWrong = F3(
 	function (e, d1, d2) {
 		return A2(
 			$elm$html$Html$div,
-			_List_Nil,
+			_List_fromArray(
+				[
+					A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+					A2($elm$html$Html$Attributes$style, 'flex-direction', 'column'),
+					A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+					A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+					A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(220, 220, 220)'),
+					A2($elm$html$Html$Attributes$style, 'padding', '20px'),
+					A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
+					A2($elm$html$Html$Attributes$style, 'margin', '10px')
+				]),
 			_List_fromArray(
 				[
 					A2(
@@ -7202,26 +7489,45 @@ var $author$project$Main$viewWrong = F3(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text('sorry, that\'s incorrect!')
+							$elm$html$Html$text('Sorry, that\'s incorrect!')
 						])),
 					A2(
 					$elm$html$Html$div,
-					_List_Nil,
+					_List_fromArray(
+						[
+							A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+							A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+							A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+							A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+							A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem')
+						]),
 					_List_fromArray(
 						[
 							$elm$html$Html$text(
-							'you guessed ' + (e.name + (' occured ' + (A2($author$project$Util$betweenStr, d1, d2) + ('; it occured in ' + $elm$core$String$fromInt(e.date))))))
+							'You guessed ' + (e.name + (' occured ' + (A2($author$project$Util$betweenStr, d1, d2) + ('; it occured in ' + $elm$core$String$fromInt(e.date))))))
 						])),
 					A2(
 					$elm$html$Html$div,
-					_List_Nil,
 					_List_fromArray(
 						[
-							$elm$html$Html$text('-----')
-						])),
+							A2($elm$html$Html$Attributes$style, 'margin', '10px 2px'),
+							A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem'),
+							A2($elm$html$Html$Attributes$style, 'border', '1px solid black'),
+							A2($elm$html$Html$Attributes$style, 'width', '20%'),
+							A2($elm$html$Html$Attributes$style, 'background-color', 'black')
+						]),
+					_List_Nil),
 					A2(
 					$elm$html$Html$div,
-					_List_Nil,
+					_List_fromArray(
+						[
+							A2($elm$html$Html$Attributes$style, 'display', 'flex'),
+							A2($elm$html$Html$Attributes$style, 'flex-direction', 'row'),
+							A2($elm$html$Html$Attributes$style, 'justify-content', 'center'),
+							A2($elm$html$Html$Attributes$style, 'align-items', 'center'),
+							A2($elm$html$Html$Attributes$style, 'margin-bottom', '10px'),
+							A2($elm$html$Html$Attributes$style, 'font-size', '1.2rem')
+						]),
 					_List_fromArray(
 						[
 							$elm$html$Html$text(e.desc)
@@ -7230,6 +7536,17 @@ var $author$project$Main$viewWrong = F3(
 					$elm$html$Html$button,
 					_List_fromArray(
 						[
+							A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(10, 100, 240)'),
+							A2($elm$html$Html$Attributes$style, 'color', 'white'),
+							A2($elm$html$Html$Attributes$style, 'border', 'none'),
+							A2($elm$html$Html$Attributes$style, 'margin-top', '20px'),
+							A2($elm$html$Html$Attributes$style, 'padding', '0.4rem 0.6rem'),
+							A2($elm$html$Html$Attributes$style, 'margin', '2px'),
+							A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+							A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+							A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+							A2($elm$html$Html$Attributes$style, 'border-radius', '4px'),
+							A2($elm$html$Html$Attributes$style, 'font-size', '1rem'),
 							$elm$html$Html$Events$onClick($author$project$Types$Back)
 						]),
 					_List_fromArray(
@@ -7248,7 +7565,8 @@ var $author$project$Main$view = function (model) {
 				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						A2($elm$html$Html$Attributes$style, 'margin', '20px')
+						A2($elm$html$Html$Attributes$style, 'margin', '20px'),
+						A2($elm$html$Html$Attributes$style, 'top', '0')
 					]),
 				_List_fromArray(
 					[
@@ -7292,6 +7610,15 @@ var $author$project$Main$view = function (model) {
 											$elm$html$Html$button,
 											_List_fromArray(
 												[
+													A2($elm$html$Html$Attributes$style, 'background-color', 'rgb(130, 100, 130)'),
+													A2($elm$html$Html$Attributes$style, 'color', 'white'),
+													A2($elm$html$Html$Attributes$style, 'border', 'none'),
+													A2($elm$html$Html$Attributes$style, 'height', '45px'),
+													A2($elm$html$Html$Attributes$style, 'width', '100px'),
+													A2($elm$html$Html$Attributes$style, 'text-align', 'center'),
+													A2($elm$html$Html$Attributes$style, 'vertical-align', 'middle'),
+													A2($elm$html$Html$Attributes$style, 'text-decoration', 'none'),
+													A2($elm$html$Html$Attributes$style, 'border-radius', '10px'),
 													$elm$html$Html$Events$onClick(
 													$author$project$Types$LearnMore(
 														A3($author$project$Types$Event, 'About Timeline', 0, 'Timeline was created by Tobit Glenhaber to help students study for the APUSH exam (or just to learn US History). The code is under a MIT License and is available here: https://github.com/tglenhab/timeline')))
